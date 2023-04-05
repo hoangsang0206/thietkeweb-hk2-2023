@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    background-color: #f1f2f6;
+}
+
+.container-header
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1270px;
+}
+
+.container
+{
+    width: 1270px;
+    margin: auto;
+}
+
+header
+{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    border-bottom: 1px solid lightgray;
+}
+
+.logo
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    text-decoration: none;
+    float: left;
+    animation: change-color 15s infinite;
+}
+
+@keyframes change-color {
+    0% {
+        color: rgb(255, 0, 0);
+    }
+    25% {
+        color: rgb(255, 255, 0);
+    }
+    50% {
+        color: rgb(0, 255, 0);
+    }
+    75% {
+        color: rgb(0, 255, 255);
+    }
+    100% {
+        color: rgb(255, 0, 255);
+    }
+}
+
+#search-box
+{
+    width: 500px;
+    height: 37px;
+    margin-left: 30px;
+    padding-left: 13px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 100px;
+    box-sizing: border-box;
+}
+
+#search-box:focus
+{
+    outline: none;
+}
+
+#search-btn
+{
+    width: 40px;
+    height: 37px;
+    font-size: 18px;
+    position: absolute;
+    margin-left: -36px;
+    border: none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: white;
+    background-color: red;
+}
+
+#search-btn:hover
+{
+    color: black;
+    cursor: pointer;
+}
+
+.news
+{
+    margin-left: 60px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.login-btn
+{
+    margin-left: 60px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#header-icon
+{
+    position: absolute;
+    margin-left: -30px;
+    margin-top: -3px;
+    font-size: 23px;
+}
+
+.cart
+{
+    color: black;
+    margin-left: 60px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#icon-danh-muc
+{
+    margin-right: 10px;
+    background: none;
+}
+
+.top-nav
+{
+    margin-top: 7px;
+    display: flex;
+}
+
+.danh-muc
+{
+    font-weight: 500;
+    width: 220px;
+    height: 33px;
+    background-color: #4a4949;
+    color: white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    cursor: default;
+}
+
+.top-menu
+{
+    width: 1042px;
+    height: 33px;
+    background-color: gray;
+    border-radius: 4px;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-menu a
+{
+    text-decoration: none;
+    background: none;
+    color: white;  
+    
+}
+
+.top-menu a:not(:first-child)
+{
+    margin-left: 55px;
+}
+
+.top-menu a:hover
+{
+    color: black;
+}
+
+#top-menu-icon
+{
+    background: none;
+    padding-right: 8px;
+}
+
+.main-menu
+{
+    position: relative;
+    display: flex;
+    margin-top: 7px;
+}
+
+.menu-san-pham
+{
+    width: 220px;
+    border-radius: 5px;
+}
+
+.menu-icon
+{
+    margin-left: 15px;
+    position: absolute;
+}
+
+#fa-menu-icon
+{
+    background: none;
+}
+
+.menu-sp-name
+{
+    margin-left: 50px;
+}
+
+.menu-san-pham>ul
+{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.menu-san-pham>ul>li
+{
+    line-height: 40px;
+    font-weight: 500;
+    background-color: white;
+}
+
+.menu-san-pham>ul>li>a
+{
+    text-decoration: none;
+    background: none;
+    color: black;
+}
+
+.menu-san-pham>ul>li>a>span
+{
+    background: none;
+}
+
+#chevron-right
+{
+    font-size: 12px;
+    background: none;
+    padding-top: 16px;
+    padding-right: 6px;
+    float: right;
+}
+
+.menu-san-pham>ul>li:hover
+{
+    background-color: red;
+}
+
+.menu-san-pham>ul>li:hover .menu-sp-name
+{
+    color: white;
+}
+
+.menu-images
+{
+    width: 1040px;
+    height: 479px;
+    margin-left: 8px;
+}
+
+.menu-img-1
+{
+    width: 706px;
+    float: left;
+}
+
+.menu-img-2
+{
+   width: 330px;
+   float: right;
+}
+
+.menu-img-3
+{
+    width: 330px;
+    margin-top: 3px;
+    float: right;
+}
+
+.mega-menu
+{
+    width: 1040px;
+    height: 480px;
+    background: white;
+    margin-top: -40px;
+    margin-left: 228px;
+    position: absolute;
+    top: 40px;
+    display: none;
+}
+
+.menu-hover-btn /*button làm bằng chatGPT*/
+{
+    background: none;
+    position: absolute;
+    left: 220px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 21px 0 18px 18px;
+    border-color: transparent transparent transparent red;
+    z-index: 1;
+    display: none;
+}
+
+.menu-san-pham>ul>li:hover .mega-menu
+{
+    display: block;      
+}
+
+.menu-san-pham>ul>li:hover .menu-hover-btn
+{
+    display: inline-block;
+}
+
+.mega-menu-items
+{
+    width: 200px;
+    height: 210px;
+    background: none;
+    float: left;
+    margin-left: 18px;
+    margin-bottom: 25px;
+}
+
+.mega-menu-items>a
+{
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 500;
+    color: red;
+    background: none;
+}
+
+.mega-menu-items ul
+{
+    background: none;
+    padding: 0;
+    margin-top: -5px;
+}
+
+.mega-menu-items ul li
+{
+    height: 23px;
+    list-style-type: none;
+    background: none;
+    display: flex;
+    align-items: center;
+}
+
+.mega-menu-items ul li a
+{
+    text-decoration: none;
+    color: #575656;
+    background: none;
+}
+
+.mega-menu-items ul li a:hover
+{
+    color: red;
+}
+
+.gigabyte-laptop
+{
+    
+    height: 500px;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+.product-title
+{
+    height: 10%;
+    background-color: #d72828;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.product-title a
+{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    background: none;
+}
+
+.product-list
+{
+    height: 90%;
+    border: 1px solid black;
+}
+
+.product-list td
+{
+    border: 1px solid orange;
+}
+
+
+footer
+{
+    height: 300px;
+    font-size: 30px;
+    background-color: lightgray;
+    margin-top: 30px;
+}
+
+.footer-1
+{
+    height: 100px;
+    font-size: 30px;
+    background: lightgray;
+    display: flex;
+    justify-content: center;
+}
