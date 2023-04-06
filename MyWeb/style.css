@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color: #1c1c27;
+    color: white;
+}
+
+.container
+{
+    width: 1400px;
+    margin: auto;
+    background: transparent;
+    border: 1px solid white;
+}
+
+header {
+    width: 100%;
+    background-color: #28293d;
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+
+.header {
+    height: 70px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: 700;
+    text-decoration: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #fa0000, #fbb127);
+}
+
+.logo:hover {
+    
+    background-image: linear-gradient(to right, #3742fa, #7bed9f);
+}
+
+.search-box {
+    margin-left: 70px;
+    background: transparent;
+}
+
+.search-box input {
+    height: 35px;
+    width: 320px;
+    background: transparent;
+    box-sizing: border-box;
+    padding-left: 12px;
+    border-radius: 18px;
+    border: 1px solid lightgray;
+}
+
+.search-box input::placeholder {
+    font-weight: 400;
+    color: white;
+    font-size: 15px;
+}
+
+.search-box input:focus {
+    outline: none;
+}
+
+.fa-solid {
+    background: transparent;
+}
+
+.search-box button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    background: transparent;
+    color: white;
+    margin-left: -40px;
+}
+
+.navigation {
+    margin-left: 70px;
+    background: transparent;
+}
+
+.navigation > ul {
+    list-style-type: none;
+    
+}
+
+.navigation > ul > li {
+    
+    float: left;
+    line-height: 70px;
+    background: transparent;
+}
+
+.navigation > ul > li:not(:first-child)
+{
+    margin-left: 60px;
+}
+
+.navigation > ul > li > a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: .5s;
+    background: transparent;
+}
+
+.navigation > ul > li > a:hover {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #ff3838, #ffaf40);
+}
+
+.list-product {
+    list-style-type: none;
+    width: 1400px;
+    height: 500px;
+    background-color: #28293d;
+    border: 1px solid red;
+    position: absolute;
+    margin-left: -733px;
+    display: none;
+}
+
+.menu:hover a {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #ff3838, #ffaf40);
+}
+
+.menu:hover .list-product {
+    display: block;
+}
+
+.login-btn {
+    float: left;
+}
