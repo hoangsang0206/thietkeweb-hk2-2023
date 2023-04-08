@@ -223,6 +223,72 @@ header {
     color: #00cfde;
 }
 
+.cart {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.cart table {
+    border: 1px solid #9090a7;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart table th, td {
+    border: 1px solid #9090a7;
+    text-align: center;
+    padding: 0.7rem;
+}
+
+.cart form input{
+    width: 3rem;
+    background: none;
+    text-align: center;
+    border: 1px solid #9090a7;
+}
+
+.cart img {
+    width: 10rem;
+}
+
+.cart .stt {
+    width: 5%;
+}
+.cart .product-img {
+    width: 20%;
+}
+
+.cart .product-name {
+    width: 30%;
+}
+
+.cart .quantity {
+    width: 10%;
+}
+
+.cart .price {
+    width: 15%;
+}
+
+.cart .note {
+    width: 15%;
+}
+
+.cart .remove {
+    width: 5%;
+}
+
+.cart .product-name a {
+    text-decoration: none;
+}
+
+.cart .product-name a:hover {
+    color: #ac5cd9;
+}
+
+.cart .remove i{
+    cursor: pointer;
+}
 
 footer {
     margin-top: 3rem;
