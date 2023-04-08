@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: url(images/anime-images.jpg);
+    background-image: url(images/aorus-background.JPG);
 }
 
 .container
@@ -150,7 +150,7 @@ header {
     backdrop-filter: blur(10px);
     border: 1px solid white;
     border-radius: 1rem;
-    box-shadow: 0.3rem 0.3rem 20px lightgray;
+    box-shadow: 0 0 2rem lightgray;
 }
 
 .login-form > h1 {

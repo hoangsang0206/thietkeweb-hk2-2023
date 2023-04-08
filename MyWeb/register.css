@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: url(images/netbian-anime-3.jpg);
+    background-image: url(images/rog-background.jpg);
 }
 
 .container
@@ -22,7 +22,7 @@ body {
 header {
     width: 100%;
     background: transparent;
-    border-bottom: 1px solid #3d3f55;
+    border-bottom: 1px solid #767889;
 }
 
 .header {
@@ -150,7 +150,7 @@ header {
     backdrop-filter: blur(10px);
     border: 1px solid white;
     border-radius: 1rem;
-    box-shadow: 0.3rem 0.3rem 20px lightgray;
+    box-shadow: 0 0 2rem lightgray;
 }
 
 .register-form > h1 {

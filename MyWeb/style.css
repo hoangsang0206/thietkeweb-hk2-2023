@@ -131,22 +131,38 @@ header {
     background-image: linear-gradient(to right, #ff3838, #ffaf40);
 }
 
-.login-btn {
-    width: 8.2rem;
-    height: 2.5rem;
-    margin-left: 3.1rem;
-    border-radius: 2rem;
-    background: transparent;
-}
-
-.login-btn > a {
+.cart-btn {
     text-decoration: none;
-    font-size: 1.2rem;
-    background: transparent;
+    background: none;
+    margin-left: 4.95rem;
 }
 
-.login-btn:hover {
-    background: linear-gradient(to right, #6600cc, #0063f7);
+.cart-btn > i {
+    font-size: 1.6rem;
+}
+
+.cart-btn:hover > i{
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #6500cd, #00cfdd);
+}
+
+.login-btn {
+    text-decoration: none;
+    background: none;
+    margin-left: 3rem;
+}
+
+.login-btn > i {
+    font-size: 1.6rem;
+}
+
+.login-btn:hover > i{
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #6500cd, #00cfdd);
 }
 .megamenu {
     position: absolute;
@@ -348,6 +364,24 @@ header {
     font-size: 1rem;
     font-weight: 300;
     line-height: 2rem;
+}
+
+.infomation button {
+    width: 6rem;
+    height: 2.1rem;
+    margin-top: 1rem;
+    background: transparent;
+    transition: .5s;
+}
+
+.infomation button a {
+    text-decoration: none;
+    background: none;
+}
+
+.infomation button:hover {
+    background: linear-gradient(to right, #6600cc, #0063f7);
+    box-shadow: 5px 5px 10px #0063f8;
 }
 
 .video > video{
