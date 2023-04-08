@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STech - Hi-end PC & Gaming Gears</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!--Icon from https://fontawesome.com/-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
@@ -16,22 +17,55 @@
         <div class="container">
             <div class="header">
                 <a href="index.html" class="logo">STech</a>
-                <form action="#" class="search-box">
-                    <input type="text" placeholder="Nhập tên sản phẩm" />
+                <form class="search-box">
+                    <input type="text" placeholder="Nhập tên sản phẩm"/>
                     <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
                 <div class="navigation">
                     <ul>
                         <li><a href="index.html">Trang chủ</a></li>
-                        <li><a href="#">Sản phẩm</a></li>
+                        <li><a href="index.html">Sản phẩm</a></li>
                         <li><a href="#">Bảo hành</a></li>
                         <li><a href="#">Trả góp</a></li>
                         <li><a href="#">Liên Hệ</a></li>
                     </ul>
                 </div>
-                <button class="login-btn"><a href="#">Đăng nhập</a></button>
             </div>
         </div>
     </header>
+    <div class="container">
+        <div class="login">
+            <form action="#" class="login-form">
+                <h1>Đăng nhập</h1>
+                <div class="input-box">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="account" required/>
+                    <label for="account">Tài khoản</label>
+                </div>
+                <div class="input-box">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="password" required/>
+                    <label for="password">Mật khẩu</label>
+                </div> 
+                <div class="remember-forgot">
+                    <input type="checkbox" id="remember" checked>
+                    <label for="remember">Nhớ đăng nhập</label>
+                    <a href="#">Quên mật khẩu</a>
+                </div>
+                <button type="submit" class="login-btn">Đăng nhập</button>
+                <div class="break">
+                    <div class="line-break"></div>
+                    <span>Hoặc đăng nhập bằng</span>
+                    <div class="line-break"></div>
+                </div>
+                <div class="another-login">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.google.com/" target="_blank"><i class="fa-brands fa-google"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="register"><span>Chưa có tài khoản? </span><a href="#">Đăng ký</a></div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

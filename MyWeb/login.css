@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: white;
+}
+
+body {
+    background-image: url(images/anime-images.jpg);
+}
+
+.container
+{
+    width: 1400px;
+    margin: auto;
+    background: transparent;
+}
+
+header {
+    width: 100%;
+    background: transparent;
+    border-bottom: 1px solid #3d3f55;
+}
+
+.header {
+    height: 5rem;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #fa0000, #fbb127);
+}
+
+.logo:hover {
+    
+    background-image: linear-gradient(to right, #3742fa, #7bed9f);
+}
+
+.search-box {
+    margin-left: 4.4rem;
+    background: transparent;
+}
+
+.search-box input {
+    height: 2.3rem;
+    width: 20rem;
+    background: transparent;
+    box-sizing: border-box;
+    padding-left: 1rem;
+    border-radius: 2rem;
+    border: 1px solid lightgray;
+}
+
+.search-box input::placeholder {
+    font-weight: 400;
+    color: white;
+    font-size: 1rem;
+}
+
+.search-box input:focus {
+    outline: none;
+}
+
+.fa-solid {
+    background: transparent;
+}
+
+.search-box button {
+    width: 2.2rem;
+    height: 2.3rem;
+    border: none;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    background: transparent;
+    color: white;
+    margin-left: -2.5rem;
+}
+
+.navigation {
+    margin-left: 4.6rem;
+    background: transparent;
+}
+
+.navigation > ul {
+    list-style-type: none;
+    margin-left: 11.3rem;
+}
+
+.navigation > ul > li {
+    float: left;
+    line-height: 4.4rem;
+    background: transparent;
+}
+
+.navigation > ul > li:not(:first-child)
+{
+    margin-left: 3.7rem;
+}
+
+.navigation > ul > li > a {
+    text-decoration: none;
+    font-size: 1.12rem;
+    font-weight: 500;
+    transition: .5s ease-in-out;
+    background: transparent;
+}
+
+.navigation > ul > li > a:hover {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #ff3838, #ffaf40);
+}
+
+.menu:hover > a {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #ff3838, #ffaf40);
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 48.4rem;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    padding: 3rem;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    border-radius: 1rem;
+    box-shadow: 0.3rem 0.3rem 20px lightgray;
+}
+
+.login-form > h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.input-box {
+    width: 100%;
+    margin-top: 1.2rem;
+    border-bottom: 2px solid white;
+}
+
+.input-box input {
+    width: 100%;
+    height: 2.5rem;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.input-box input::placeholder
+{
+    color: white
+}
+
+.input-box label {
+    position: absolute;
+    left: 3rem;
+    pointer-events: none;
+    margin-top: 0.5rem;
+    transition: .5s;
+}
+
+.input-box input:focus~label, .input-box input:valid~label {
+    transform: translateY(-100%);
+}
+
+.input-box > i {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 3.5rem;
+    line-height: 2.6rem;
+}
+
+.remember-forgot {
+    margin-top: 0.7rem;
+}
+
+.remember-forgot > a {
+    float: right;
+}
+
+.login-btn {
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    width: 100%;
+    height: 2.7rem;
+    border-radius: 0.4rem;
+    border: none;
+    background-color: #0063f8;
+}
+
+.login-btn:hover {
+    background-image: linear-gradient(to right, #ff3b3b, #fdac41);
+    cursor: pointer;
+}
+
+.break {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.break .line-break {
+    width: 30%;
+    border-top: 1px solid #aaa4a4;
+}
+
+.break span {
+    font-size: 1rem;
+    width: auto;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    text-align: center;
+}
+
+.another-login {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.another-login a:not(:first-child) {
+    margin-left: 2rem;
+}
+
+.another-login a i {
+    font-size: 2rem;
+}
+
+.another-login a i:hover {
+    transform: scale(1.2);
+}
+
+.fa-facebook {
+    color: #0d8df0
+}
+
+.fa-google {
+     /*Nguồn: https://stackoverflow.com/questions/52578726/fontawesome-5-multi-color-icon */
+     background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, 
+     #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+     -webkit-background-clip: text;
+     background-clip: text;
+     color: transparent;
+     -webkit-text-fill-color: transparent;
+ }
+
+.fa-twitter {
+    color: #1d9bf0;
+}
+
+.register {
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.register a {
+    color: #9d3ad6;
+}
