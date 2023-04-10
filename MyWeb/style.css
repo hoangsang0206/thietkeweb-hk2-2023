@@ -25,10 +25,6 @@ header {
     z-index: 99;
 }
 
-.menu-for-mobile {
-    display: none;
-}
-
 .header {
     width: 100%;
     height: 5rem;
@@ -37,6 +33,10 @@ header {
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
+}
+
+.menu-for-mobile {
+    display: none;
 }
 
 .logo {
@@ -463,44 +463,67 @@ footer {
 
 /*For mobile*/
 @media only screen and (max-width: 767px) {
-
+    * {
+        font-size: 0.9rem;
+    }
     .container {
         max-width: 100%;
         margin: 0;
-        padding: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
         box-sizing: border-box;
     }
 
     header {
         position: relative;
-        display: flex;
-        flex-direction: row;
+    }
+
+    .header {
+        height: 4rem;
+        justify-content: space-between;
+        position: static;
     }
 
     .menu-for-mobile {
-        background: none;
+        list-style-type: none;
         display: block;
-        position: absolute;
-        border: 1px solid white;
+        background: none;
+        margin-right: 0.5rem;
+    }
 
-        z-index: 99;
+    
+    .menu-for-mobile > li {
+        background: none;
+    }
+
+    .menu-for-mobile > li > label {
+        background: none;
+    }
+
+
+    .menu-for-mobile > li > label > i {
+        font-size: 1.5rem;
+        background: none;
     }
 
     .mobile-menu {
+        position: absolute;
         overflow-y: scroll;
-        position: relative;
+        width: 13rem;
         height: 100vh;
-        padding: 1rem;
         border: 1px solid white;
+        padding: 1rem;
+        top: 100%;
         left: -100%;
         transition: all .5s;
     }
 
-    #mobile-menu-btn {
+    #check {
         display: none;
+        background: none;
     }
 
-    #mobile-menu-btn:checked ~ .mobile-menu {
+    #check:checked ~ .mobile-menu {
         left: 0;
     }
 
@@ -508,20 +531,15 @@ footer {
         list-style-type: none;
     }
 
-    .header {
-        height: 2rem;
-        justify-content: space-between;
-        position: static;
-        z-index: 0;
-    }
     .logo {
-        font-size: 1.8rem;
+        font-size: 2.2rem;
+        margin-right: 0.5rem;
     }
 
     .search-box {
         margin-left: 0;
-        width: 42%;
-        height: 1.8rem;
+        width: 60%;
+        height: 2rem;
     }
 
     .search-box input {
@@ -530,11 +548,11 @@ footer {
     }
 
     .search-box input::placeholder {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .search-box button {
-        display: none;
+        width: 3rem;
     }
 
     .navigation {
@@ -542,19 +560,7 @@ footer {
     }
 
     .cart-login {
-        margin: 0;
-    }
-
-    .login-btn {
-        margin-left: 1rem;
-    }
-
-    .login-btn > i {
-        font-size: 1.4rem;
-    }
-
-    .cart-btn > i {
-        font-size: 1.4rem;
+       display: none;
     }
 
     .content {
@@ -562,14 +568,23 @@ footer {
         margin-top: 1rem;
     }
 
-    .content-text > div h1 {
-        font-size: 1.7rem;
-    }
-
     .content-text {
         width: 100%;
     }
 
+
+    .content-text > div h1 {
+        font-size: 1.7rem;
+    }
+
+    .content-text > div h2 {
+        font-size: 1.3rem;
+    }
+
+    .content-text > div h3 {
+        font-size: 0.9rem;
+    }
+   
     .slide-show-area {
         width: 100%;
         margin-top: 2rem;
