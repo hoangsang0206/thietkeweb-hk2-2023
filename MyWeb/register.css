@@ -18,20 +18,28 @@ body {
     width: 1400px;
     margin: auto;
     background: transparent;
+    position: relative;
 }
 
 header {
     width: 100%;
-    background: transparent;
-    border-bottom: 1px solid #767889;
+    background-color: #28293d;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.menu-for-mobile {
+    display: none;
 }
 
 .header {
+    width: 100%;
     height: 5rem;
     background: transparent;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     box-sizing: border-box;
 }
 
@@ -51,18 +59,25 @@ header {
 }
 
 .search-box {
+    overflow: hidden;
+    width: 20%;
+    height: 40%;
     margin-left: 4.4rem;
     background: transparent;
+    border: 1px solid white;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
 }
 
 .search-box input {
-    height: 2.3rem;
-    width: 20rem;
+    height: 100%;
+    width: 83%;
     background: transparent;
     box-sizing: border-box;
     padding-left: 1rem;
-    border-radius: 2rem;
-    border: 1px solid lightgray;
+    border: none;
+    float: left;
 }
 
 .search-box input::placeholder {
@@ -80,14 +95,14 @@ header {
 }
 
 .search-box button {
-    width: 2.2rem;
-    height: 2.3rem;
+    width: 17%;
+    height: 100%;
     border: none;
     border-top-right-radius: 18px;
     border-bottom-right-radius: 18px;
     background: transparent;
     color: white;
-    margin-left: -2.5rem;
+    float: right;
 }
 
 .navigation {
@@ -97,7 +112,7 @@ header {
 
 .navigation > ul {
     list-style-type: none;
-    margin-left: 11.3rem;
+    
 }
 
 .navigation > ul > li {

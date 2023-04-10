@@ -11,9 +11,10 @@
 
 .container
 {
-    max-width: 1400px;
+    width: 1400px;
     margin: auto;
-    background: transparent;    
+    background: transparent;
+    position: relative;
 }
 
 header {
@@ -24,12 +25,17 @@ header {
     z-index: 99;
 }
 
+.menu-for-mobile {
+    display: none;
+}
+
 .header {
+    width: 100%;
     height: 5rem;
     background: transparent;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     box-sizing: border-box;
 }
 
@@ -49,18 +55,25 @@ header {
 }
 
 .search-box {
+    overflow: hidden;
+    width: 20%;
+    height: 40%;
     margin-left: 4.4rem;
     background: transparent;
+    border: 1px solid white;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
 }
 
 .search-box input {
-    height: 2.3rem;
-    width: 20rem;
+    height: 100%;
+    width: 83%;
     background: transparent;
     box-sizing: border-box;
     padding-left: 1rem;
-    border-radius: 2rem;
-    border: 1px solid lightgray;
+    border: none;
+    float: left;
 }
 
 .search-box input::placeholder {
@@ -78,14 +91,14 @@ header {
 }
 
 .search-box button {
-    width: 2.2rem;
-    height: 2.3rem;
+    width: 17%;
+    height: 100%;
     border: none;
     border-top-right-radius: 18px;
     border-bottom-right-radius: 18px;
     background: transparent;
     color: white;
-    margin-left: -2.5rem;
+    float: right;
 }
 
 .navigation {
@@ -124,17 +137,14 @@ header {
     background-image: linear-gradient(to right, #ff3838, #ffaf40);
 }
 
-.menu:hover > a {
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    background-image: linear-gradient(to right, #ff3838, #ffaf40);
+.cart-login {
+    background: none;
+    margin-left: 4rem;
 }
 
 .cart-btn {
     text-decoration: none;
     background: none;
-    margin-left: 4.95rem;
 }
 
 .cart-btn > i {
@@ -151,7 +161,7 @@ header {
 .login-btn {
     text-decoration: none;
     background: none;
-    margin-left: 3rem;
+    margin-left: 2rem;
 }
 
 .login-btn > i {
@@ -166,7 +176,7 @@ header {
 }
 .megamenu {
     position: absolute;
-    margin-left: -734px;
+    left: 0;
     display: none;
     line-height: normal;
     clear: both;
@@ -174,13 +184,13 @@ header {
 
 .megamenu_1 {
     width: 1400px;
-    height: 600px;
     background-color: #28293d;
     padding: 20px 20px 0px 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .menu:hover .megamenu {
