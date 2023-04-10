@@ -7,7 +7,6 @@
     font-size: 1rem;
     background-color: #1c1c27;
     color: white;
-    box-sizing: border-box;
 }
 
 .container
@@ -15,7 +14,6 @@
     width: 1400px;
     margin: auto;
     background: transparent;
-    box-sizing: border-box;
 }
 
 header {
@@ -24,7 +22,6 @@ header {
     position: sticky;
     top: 0;
     z-index: 99;
-    box-sizing: border-box;
 }
 
 .header {
@@ -169,7 +166,7 @@ header {
 }
 .megamenu {
     position: absolute;
-    margin-left: -734px;
+    left: 8%;
     display: none;
     line-height: normal;
     clear: both;
@@ -177,13 +174,13 @@ header {
 
 .megamenu_1 {
     width: 1400px;
-    height: 600px;
     background-color: #28293d;
     padding: 20px 20px 0px 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .menu:hover .megamenu {
@@ -285,7 +282,7 @@ header {
 }
 
 .images-slide-show > img {
-    width: 52.49rem;
+    width: 100%;
 }
 
 @keyframes slideshow {
@@ -453,12 +450,12 @@ footer {
     background-color: #555870;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
 
     .container {
-        width: 100%;
+        max-width: 100%;
+        margin: 0;
         padding: 1.5rem;
-        border: 1px solid white;
         box-sizing: border-box;
     }
 
@@ -511,10 +508,6 @@ footer {
     .slide-show-area {
         width: 100%;
         margin-top: 2rem;
-    }
-
-    .images-slide-show > img {
-        width: 100%;
     }
 
     .break {
