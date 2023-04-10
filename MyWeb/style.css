@@ -7,6 +7,7 @@
     font-size: 1rem;
     background-color: #1c1c27;
     color: white;
+    box-sizing: border-box;
 }
 
 .container
@@ -22,6 +23,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 99;
+    box-sizing: border-box;
 }
 
 .header {
@@ -235,6 +237,11 @@ header {
     align-items: center;
 }
 
+.content-text > div {
+    display: flex;
+    flex-direction: column;
+}
+
 .content-text > div h1 {
     font-size: 3rem;
     font-weight: 600;
@@ -251,9 +258,9 @@ header {
 }
 
 .content-text > div > a {
+    margin-top: 0.5rem;
     text-decoration: none;
     color: #73dfe7;
-    line-height: 3rem;
     transition: .5s;
 }
 
@@ -267,7 +274,6 @@ header {
 .slide-show-area {
     overflow: hidden;
     width: 60%;
-    height: 29rem;
 }
 
 .images-slide-show {
@@ -334,6 +340,13 @@ header {
 .break {
     border-bottom: 1px solid #3d3f55;
     margin: 3rem 0 3rem 0;
+}
+
+.container-info
+{
+    width: 1400px;
+    margin: auto;
+    background: transparent;
 }
 
 .infomation {
@@ -436,4 +449,77 @@ footer {
     height: 3rem;
     text-align: center;
     background-color: #555870;
+}
+
+@media screen and (max-width: 576px) {
+
+    .container {
+        width: 100%;
+        padding: 1.5rem;
+        border: 1px solid white;
+        box-sizing: border-box;
+    }
+
+    header {
+        position: static;
+    }
+
+    .header {
+        height: 2rem;
+        justify-content: space-between;
+        position: static;
+        z-index: 0;
+    }
+
+    .search-box {
+        margin-left: 2rem;
+    }
+
+    .search-box input {
+        width: 16rem;
+        height: 2.7rem;
+        padding-left: 1.3rem;
+    }
+
+    .cart-btn {
+        margin-left: 2rem;
+    }
+
+    .login-btn {
+        margin-left: 1.5rem;
+    }
+
+    .search-box input::placeholder {
+        font-size: 1.1rem;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .content {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .content-text {
+        width: 100%;
+    }
+
+    .slide-show-area {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .images-slide-show > img {
+        width: 32.9rem;
+    }
+
+    .break {
+       display: none;
+    }
+
+    .container-info {
+        display: none;
+    }
 }
