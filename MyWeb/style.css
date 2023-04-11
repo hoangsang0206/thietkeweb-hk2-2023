@@ -538,7 +538,7 @@ footer {
 
     .search-box {
         margin-left: 0;
-        width: 60%;
+        width: 45%;
         height: 2rem;
     }
 
@@ -560,9 +560,13 @@ footer {
     }
 
     .cart-login {
-       display: none;
+        margin-left: 0.5rem;
     }
 
+    .login-btn {
+        display: none;
+    }
+    
     .content {
         flex-direction: column;
         margin-top: 1rem;
