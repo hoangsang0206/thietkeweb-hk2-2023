@@ -31,7 +31,7 @@ header {
     background: transparent;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     box-sizing: border-box;
 }
 
@@ -51,18 +51,25 @@ header {
 }
 
 .search-box {
+    overflow: hidden;
+    width: 24%;
+    height: 43%;
     margin-left: 4.4rem;
     background: transparent;
+    border: 1px solid white;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
 }
 
 .search-box input {
-    height: 2.3rem;
-    width: 20rem;
+    height: 100%;
+    width: 83%;
     background: transparent;
     box-sizing: border-box;
     padding-left: 1rem;
-    border-radius: 2rem;
-    border: 1px solid lightgray;
+    border: none;
+    float: left;
 }
 
 .search-box input::placeholder {
@@ -80,24 +87,24 @@ header {
 }
 
 .search-box button {
-    width: 2.2rem;
-    height: 2.3rem;
+    width: 17%;
+    height: 100%;
     border: none;
     border-top-right-radius: 18px;
     border-bottom-right-radius: 18px;
     background: transparent;
     color: white;
-    margin-left: -2.5rem;
+    float: right;
 }
 
 .navigation {
-    margin-left: 4.6rem;
+    margin-left: 10rem;
     background: transparent;
 }
 
 .navigation > ul {
     list-style-type: none;
-    margin-left: 11.3rem;
+    
 }
 
 .navigation > ul > li {
@@ -126,12 +133,6 @@ header {
     background-image: linear-gradient(to right, #ff3838, #ffaf40);
 }
 
-.menu:hover > a {
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    background-image: linear-gradient(to right, #ff3838, #ffaf40);
-}
 
 .login {
     display: flex;
