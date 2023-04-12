@@ -464,8 +464,9 @@ footer {
 /*For mobile*/
 @media only screen and (max-width: 767px) {
     * {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
+
     .container {
         max-width: 100%;
         margin: 0;
@@ -491,7 +492,6 @@ footer {
         margin-right: 0.5rem;
     }
 
-    
     .menu-for-mobile > li {
         background: none;
     }
@@ -507,11 +507,11 @@ footer {
     }
 
     .mobile-menu {
+        background-color: #28293d;
         position: absolute;
         overflow-y: scroll;
-        width: 13rem;
+        width: 14rem;
         height: 100vh;
-        border: 1px solid white;
         padding: 1rem;
         top: 100%;
         left: -100%;
@@ -527,8 +527,60 @@ footer {
         left: 0;
     }
 
+    .mobile-login-btn {
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .mobile-login-btn i{
+        font-size: 1.3rem;
+        margin-right: 0.5rem;
+    }
+
+    .mobile-menu .menu-break {
+        height: 0;
+        border-top: 1px solid #9090a7;
+        margin-top: 0.6rem;
+        margin-bottom: 0.6rem;
+    }
+
     .mobile-menu ul {
-        list-style-type: none;
+        list-style-type: none   ;
+        background: none;
+    }
+
+    .mobile-menu ul li, h1, a, nav {
+        background: none;
+        text-decoration: none;
+    }
+
+    .mobile-menu > ul > li{
+        width: 97%;
+        line-height: 2.5rem;
+        position: relative;
+       
+    }
+
+    .mobile-menu > ul > li #menu-arrow {
+        position: absolute;
+        font-size: 0.8rem;
+        margin-top: 0.65rem;
+        right: 0;
+        transition: .3s;
+    }
+
+    .mobile-menu > ul > li:hover #menu-arrow {
+        transform: rotate(90deg);
+    }
+
+    .mobile-menu > ul > li:hover .mobile-menu-item {
+        display: block;
+    }
+
+    .mobile-menu-item {
+        padding-left: 1.6rem;
+        line-height: 1.8rem;
+        display: none;
     }
 
     .logo {
