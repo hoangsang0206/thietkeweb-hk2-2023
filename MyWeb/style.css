@@ -511,7 +511,7 @@ footer {
         position: absolute;
         overflow-y: scroll;
         width: 14rem;
-        height: 86.3vh;
+        height: 89vh;
         padding: 1rem;
         top: 100%;
         left: -100%;
@@ -652,6 +652,10 @@ footer {
 
     .container-info {
         display: none;
+    }
+
+    .product {
+        margin-top: 2rem;
     }
 
     .list-of-product-list {
