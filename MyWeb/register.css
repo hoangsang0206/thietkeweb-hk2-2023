@@ -167,6 +167,7 @@ header {
 .input-box {
     width: 100%;
     margin-top: 1.2rem;
+    position: relative;
     border-bottom: 2px solid white;
 }
 
@@ -178,14 +179,9 @@ header {
     outline: none;
 }
 
-.input-box input::placeholder
-{
-    color: white
-}
-
 .input-box label {
     position: absolute;
-    left: 3rem;
+    left: 0;
     pointer-events: none;
     margin-top: 0.5rem;
     transition: .5s;
@@ -198,7 +194,7 @@ header {
 .input-box > i {
     font-size: 1.5rem;
     position: absolute;
-    right: 3.5rem;
+    right: 0;
     line-height: 2.6rem;
 }
 
@@ -282,4 +278,86 @@ header {
 
 .login a {
     color: #9d3ad6;
+}
+
+.back-to-home {
+    display: none;
+}
+
+/*For mobile*/
+@media only screen and (max-width: 767px) {
+    * {
+        font-size: 1rem;
+    }
+
+    .container {
+        max-width: 100%;
+        margin: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        box-sizing: border-box;
+    }
+
+    header {
+        position: relative;
+    }
+
+    body {
+        background-size: auto;
+    }
+
+    .header {
+        height: 4rem;
+        justify-content: space-between;
+        position: static;
+    }
+    .logo {
+        font-size: 2.2rem;
+        margin-right: 0.5rem;
+    }
+
+    .search-box {
+        margin-left: 0;
+        width: 60%;
+        height: 2rem;
+    }
+
+    .search-box input {
+        padding: 0.7rem;
+        width: 100%;
+    }
+
+    .search-box input::placeholder {
+        font-size: 0.9rem;
+    }
+
+    .search-box button {
+        width: 3rem;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .register {
+        height: auto;
+    }
+
+    .register-form {
+        width: 80%;
+        margin-top: 2.5rem;
+        padding: 1.5rem;
+    }
+
+    .register-form > h1 {
+        font-size: 1.5rem;
+    }
+
+    .back-to-home {
+        display: block;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    
 }

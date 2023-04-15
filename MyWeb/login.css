@@ -164,6 +164,7 @@ header {
 .input-box {
     width: 100%;
     margin-top: 1.2rem;
+    position: relative;
     border-bottom: 2px solid white;
 }
 
@@ -177,7 +178,7 @@ header {
 
 .input-box label {
     position: absolute;
-    left: 3rem;
+    left: 0;
     pointer-events: none;
     margin-top: 0.5rem;
     transition: .5s;
@@ -190,7 +191,7 @@ header {
 .input-box > i {
     font-size: 1.5rem;
     position: absolute;
-    right: 3.5rem;
+    right: 0;
     line-height: 2.6rem;
 }
 
@@ -355,14 +356,6 @@ header {
 
     .login-form > h1 {
         font-size: 1.5rem;
-    }
-
-    .input-box label {
-        left: 1.5rem;
-    }
-
-    .input-box > i {
-        right: 1.6rem;
     }
 
     .back-to-home {
