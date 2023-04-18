@@ -297,6 +297,7 @@ header {
 }
 
 .pay {
+    margin-top: 2rem;
     display: grid;
     place-items: end;
 }
@@ -304,10 +305,20 @@ header {
 .pay-btn {
     width: 13rem;
     height: 3rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     background-color: #ff3b3b;
     border: none;
     border-radius: 6px;
+}
+
+.total-payment {
+    font-size: 1.2rem;
+}
+
+.total-payment span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ff3b3b;
 }
 
 .pay-btn:hover {
@@ -507,10 +518,17 @@ footer {
         font-size: 0.7rem;
     }
 
-    .cart tr:nth-child(1) th:nth-child(1),
-    .cart tr:nth-child(2) td:nth-child(1),
-    .cart tr:nth-child(3) td:nth-child(1) {
+    .cart th:nth-child(1),
+    .cart td:nth-child(1) {
         display: none;
+    }
+
+    .total-payment {
+        font-size: 0.8rem;
+    }
+    
+    .total-payment span {
+        font-size: 0.8rem;
     }
 
     .pay-btn {
