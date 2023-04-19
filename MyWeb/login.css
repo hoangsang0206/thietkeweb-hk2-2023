@@ -186,6 +186,7 @@ header {
 
 .input-box input:focus~label, .input-box input:valid~label {
     transform: translateY(-100%);
+    font-size: 0.9rem;
 }
 
 .input-box > i {
