@@ -99,6 +99,7 @@ header {
     background: transparent;
     color: white;
     float: right;
+    cursor: pointer;
 }
 
 .navigation {
