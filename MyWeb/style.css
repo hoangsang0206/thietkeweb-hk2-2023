@@ -265,6 +265,10 @@ header {
     display: block;
 }
 
+.mobile-menu > nav {
+    line-height: 2rem;
+}
+
 .mobile-menu-item {
     padding-left: 1.6rem;
     line-height: 1.8rem;
@@ -448,13 +452,6 @@ header {
     margin: 3rem 0 3rem 0;
 }
 
-.container-info
-{
-    width: 1400px;
-    margin: auto;
-    background: transparent;
-}
-
 .infomation {
     width: 100%;
     display: flex;
@@ -537,9 +534,6 @@ header {
 }
 
 .product-list-items {
-    /*display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;*/
     display: grid;
     grid-template-rows: 35rem 35rem;
     grid-template-columns: auto auto auto auto;
@@ -707,7 +701,7 @@ footer {
        display: none;
     }
 
-    .container-info {
+    .infomation {
         display: none;
     }
 
@@ -767,6 +761,80 @@ footer {
 }
 
 /*For tablet*/
-@media only screen and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+    * {
+        font-size: 1rem;
+    }
 
+    .container {
+        max-width: 100%;
+        margin: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        box-sizing: border-box;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .search-box {
+        width: 45%;
+    }
+
+    .menu-for-mobile {
+        display: block;
+    }
+
+    .mobile-login-btn {
+        display: none;
+    }
+
+    .mobile-menu {
+        width: 35%;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .content-text {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .content-text > div > h1 {
+        font-size: 2.2rem;
+    }
+
+    .content-text > div > h2 {
+        font-size: 1.6rem;
+    }
+
+    .slide-show-area {
+        width: 100%;
+    }
+
+    .infomation > div {
+        width: 40%;
+    }
+
+    .infomation > div:not(:last-child) {
+        padding-top: 0;
+    }
+
+    .infomation .video {
+        display: none;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+    }
+
+    .infomation button {
+        border: 2px solid #555870;
+    }
+
+    .product-list-items {
+        display: grid;
+        grid-template-rows: 35rem 35rem 35rem;
+        grid-template-columns: auto auto auto;
+        gap: 0.5rem;
+    }
 }

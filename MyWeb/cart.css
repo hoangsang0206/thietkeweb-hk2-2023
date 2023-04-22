@@ -543,3 +543,40 @@ footer {
     }
 
 }
+
+/*For tablet*/
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+    * {
+        font-size: 1rem;
+    }
+
+    .container {
+        max-width: 100%;
+        margin: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        box-sizing: border-box;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .search-box {
+        width: 45%;
+    }
+
+    .menu-for-mobile {
+        display: block;
+    }
+
+    .mobile-login-btn {
+        display: none;
+    }
+
+    .mobile-menu {
+        width: 35%;
+    }
+
+
+}
