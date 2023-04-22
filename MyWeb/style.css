@@ -11,7 +11,7 @@
 
 .container
 {
-    width: 1400px;
+    width: 1300px;
     margin: auto;
     background: transparent;
     position: relative;
@@ -54,7 +54,7 @@ header {
     overflow: hidden;
     width: 24%;
     height: 43%;
-    margin-left: 4.4rem;
+    margin-left: 3rem;
     background: transparent;
     border: 1px solid white;
     border-radius: 2rem;
@@ -99,7 +99,7 @@ header {
 }
 
 .navigation {
-    margin-left: 4.6rem;
+    margin-left: 4rem;
     background: transparent;
 }
 
@@ -110,7 +110,7 @@ header {
 
 .navigation > ul > li {
     float: left;
-    line-height: 4.4rem;
+    line-height: 3.5rem;
     background: transparent;
 }
 
@@ -137,7 +137,7 @@ header {
 
 .cart-login {
     background: none;
-    margin-left: 4rem;
+    margin-left: 1.5rem;
 }
 
 .cart-btn {
@@ -159,7 +159,7 @@ header {
 .login-btn {
     text-decoration: none;
     background: none;
-    margin-left: 2rem;
+    margin-left: 1.3rem;
 }
 
 .login-btn > i {
@@ -246,10 +246,13 @@ header {
     width: 97%;
     line-height: 2.5rem;
     position: relative;
-   
 }
 
-.mobile-menu > ul > li #menu-arrow {
+.mobile-menu  #menu-icon {
+    width: 1.5rem;
+}
+
+.mobile-menu > ul > li .fa-chevron-right{
     position: absolute;
     font-size: 0.8rem;
     margin-top: 0.65rem;
@@ -257,11 +260,11 @@ header {
     transition: .3s;
 }
 
-.mobile-menu > ul > li:hover #menu-arrow {
+.mobile-menu > ul > li .fa-chevron-right:hover {
     transform: rotate(90deg);
 }
 
-.mobile-menu > ul > li:hover .mobile-menu-item {
+.mobile-menu > ul > li .fa-chevron-right:hover ~ .mobile-menu-item {
     display: block;
 }
 
@@ -541,8 +544,6 @@ header {
 }
 
 .product-list-item {
-   /*width: 25%;
-    height: 33rem;*/
     padding: 1rem 0.8rem 1rem 0.8rem;
     border: 1px solid #555870;
     box-sizing: border-box;
@@ -718,15 +719,18 @@ footer {
     }
 
     .product-list-items {
-        gap: 0;
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;
+        gap: 0rem;
     }
 
     .product-list-item {
-        width: 50%;
-        height: auto;
         padding: 1rem 0.5rem 1rem 0.5rem;
+    }
+
+    .product-list-item:is(:nth-child(5), :nth-child(6), :nth-child(7), :nth-child(8)) {
+        display: none;
     }
 
     .product-list-item img {
@@ -794,6 +798,10 @@ footer {
         width: 35%;
     }
 
+    .menu-break:nth-child(2) {
+        display: none;
+    }
+
     .content {
         flex-direction: column;
     }
@@ -833,8 +841,12 @@ footer {
 
     .product-list-items {
         display: grid;
-        grid-template-rows: 35rem 35rem 35rem;
+        grid-template-rows: 35rem 35rem;
         grid-template-columns: auto auto auto;
         gap: 0.5rem;
+    }
+
+    .product-list-item:is(:nth-child(7), :nth-child(8)) {
+        display: none;
     }
 }

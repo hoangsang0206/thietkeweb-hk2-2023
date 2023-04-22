@@ -11,7 +11,7 @@
 
 .container
 {
-    width: 1400px;
+    width: 1300px;
     margin: auto;
     background: transparent;
     position: relative;
@@ -54,7 +54,7 @@ header {
     overflow: hidden;
     width: 24%;
     height: 43%;
-    margin-left: 4.4rem;
+    margin-left: 3rem;
     background: transparent;
     border: 1px solid white;
     border-radius: 2rem;
@@ -99,7 +99,7 @@ header {
 }
 
 .navigation {
-    margin-left: 4.6rem;
+    margin-left: 4rem;
     background: transparent;
 }
 
@@ -136,7 +136,7 @@ header {
 
 .cart-login {
     background: none;
-    margin-left: 4rem;
+    margin-left: 1.5rem;
 }
 
 .cart-btn {
@@ -158,7 +158,7 @@ header {
 .login-btn {
     text-decoration: none;
     background: none;
-    margin-left: 2rem;
+    margin-left: 1.3rem;
 }
 
 .login-btn > i {
@@ -188,7 +188,7 @@ header {
 }
 
 
-.menu-for-mobile > li > label > i {
+.menu-for-mobile > li > label > i{
     font-size: 1.5rem;
     background: none;
 }
@@ -245,10 +245,13 @@ header {
     width: 97%;
     line-height: 2.5rem;
     position: relative;
-   
 }
 
-.mobile-menu > ul > li #menu-arrow {
+.mobile-menu #menu-icon {
+    width: 1.5rem;
+}
+
+.mobile-menu > ul > li .fa-chevron-right {
     position: absolute;
     font-size: 0.8rem;
     margin-top: 0.65rem;
@@ -256,12 +259,16 @@ header {
     transition: .3s;
 }
 
-.mobile-menu > ul > li:hover #menu-arrow {
+.mobile-menu > ul > li .fa-chevron-right:hover {
     transform: rotate(90deg);
 }
 
-.mobile-menu > ul > li:hover .mobile-menu-item {
+.mobile-menu > ul > li .fa-chevron-right:hover ~ .mobile-menu-item {
     display: block;
+}
+
+.mobile-menu > nav {
+    line-height: 2rem;
 }
 
 .mobile-menu-item {

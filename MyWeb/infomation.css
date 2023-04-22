@@ -241,14 +241,18 @@ header {
     text-decoration: none;
 }
 
-.mobile-menu > ul > li{
+.mobile-menu > ul > li {
     width: 97%;
     line-height: 2.5rem;
     position: relative;
    
 }
 
-.mobile-menu > ul > li #menu-arrow {
+.mobile-menu #menu-icon {
+    width: 1.5rem;
+}
+
+.mobile-menu > ul > li .fa-chevron-right {
     position: absolute;
     font-size: 0.8rem;
     margin-top: 0.65rem;
@@ -256,12 +260,16 @@ header {
     transition: .3s;
 }
 
-.mobile-menu > ul > li:hover #menu-arrow {
+.mobile-menu > ul > li > .fa-chevron-right:hover {
     transform: rotate(90deg);
 }
 
-.mobile-menu > ul > li:hover .mobile-menu-item {
+.mobile-menu > ul > li > .fa-chevron-right:hover ~ .mobile-menu-item {
     display: block;
+}
+
+.mobile-menu > nav {
+    line-height: 2rem;
 }
 
 .mobile-menu-item {
