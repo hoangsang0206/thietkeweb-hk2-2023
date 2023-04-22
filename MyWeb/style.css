@@ -543,13 +543,13 @@ header {
     display: grid;
     grid-template-rows: 35rem 35rem;
     grid-template-columns: auto auto auto auto;
-    gap: 0.7rem;
+    gap: 0.5rem;
 }
 
 .product-list-item {
    /*width: 25%;
     height: 33rem;*/
-    padding: 1rem 0.8rem 0.8rem 1rem;
+    padding: 1rem 0.8rem 1rem 0.8rem;
     border: 1px solid #555870;
     box-sizing: border-box;
     display: flex;
@@ -578,6 +578,7 @@ header {
 }
 
 .product-list-item .product-list-item-name {
+    height: 3rem;
     padding-top: 0.6rem;
     margin-top: 0.7rem;
     border-top:1px solid #9090a7;
@@ -731,6 +732,7 @@ footer {
     .product-list-item {
         width: 50%;
         height: auto;
+        padding: 1rem 0.5rem 1rem 0.5rem;
     }
 
     .product-list-item img {
@@ -742,6 +744,7 @@ footer {
     }    
 
     .product-list-item .product-list-item-name {
+        height: auto;
         font-size: 0.9rem;
     }
 
