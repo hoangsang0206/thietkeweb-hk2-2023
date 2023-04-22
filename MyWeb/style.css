@@ -5,8 +5,8 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
-    background-color: #1c1c27;
     color: white;
+    background-color: #1c1c27;
 }
 
 .container
@@ -116,11 +116,12 @@ header {
 
 .navigation > ul > li:not(:first-child)
 {
-    margin-left: 3.7rem;
+    margin-left: 3rem;
 }
 
 .navigation > ul > li > a {
     text-decoration: none;
+    color: white;
     font-size: 1.12rem;
     font-weight: 500;
     transition: .5s ease-in-out;
@@ -338,7 +339,7 @@ header {
 }
 
 .content {
-    margin-top: 3rem;
+    padding-top: 3rem;
     display: flex;
     flex-direction: row;
 }
@@ -512,6 +513,7 @@ header {
 }
 
 .product {
+    padding-bottom: 3rem;
     display: flex;
     flex-direction: column;
 }
@@ -603,7 +605,6 @@ header {
 }
 
 footer {
-    margin-top: 3rem;
     width: 100%;
     background-color: #555870;
 }
