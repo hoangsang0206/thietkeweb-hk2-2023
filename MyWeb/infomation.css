@@ -11,7 +11,7 @@
 
 .container
 {
-    width: 1400px;
+    width: 1300px;
     margin: auto;
     background: transparent;
     position: relative;
@@ -54,7 +54,7 @@ header {
     overflow: hidden;
     width: 24%;
     height: 43%;
-    margin-left: 4.4rem;
+    margin-left: 3rem;
     background: transparent;
     border: 1px solid white;
     border-radius: 2rem;
@@ -99,7 +99,7 @@ header {
 }
 
 .navigation {
-    margin-left: 4.6rem;
+    margin-left: 4rem;
     background: transparent;
 }
 
@@ -136,7 +136,7 @@ header {
 
 .cart-login {
     background: none;
-    margin-left: 4rem;
+    margin-left: 1.5rem;
 }
 
 .cart-btn {
@@ -158,7 +158,7 @@ header {
 .login-btn {
     text-decoration: none;
     background: none;
-    margin-left: 2rem;
+    margin-left: 1.3rem;
 }
 
 .login-btn > i {
@@ -438,9 +438,121 @@ header {
 footer {
     margin-top: 3rem;
     width: 100%;
-    height: 3rem;
-    text-align: center;
     background-color: #555870;
+}
+
+footer *{
+    background: transparent;
+}
+
+.top-footer {
+    padding: 1rem 0 1rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #f7f8ff;
+    
+}
+
+.subcribe {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.subcribe input {
+    color: black;
+    width: 80%;
+    padding: 0.3rem 0 0.3em 1rem;
+    border: none;
+    box-sizing: border-box;
+}
+
+.subcribe input::placeholder {
+    color: black;
+    font-size: 0.9rem;
+}
+
+.subcribe input:focus, .subcribe input:valid {
+    outline: none;
+}
+
+.subcribe button {
+    width: 20%;
+    background-color: #ff3b3b;
+    border: none;
+    cursor: pointer;
+}
+
+.bottom-footer {
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottom-footer-column-1, .bottom-footer-column-2, .bottom-footer-column-3 {
+    width: 32%;
+}
+
+.bottom-footer-column-1 > h1{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.switchboard-footer {
+    width: 100%;
+}
+
+.switchboard-footer h1 {
+    font-size: 1rem;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.switchboard-footer h1 span {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.switchboard-footer p {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.policy-footer {
+    width: 100%;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.policy-footer a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #74e0e6;
+}
+
+.bottom-footer-column-2 h1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #00cfdd;
+    margin-bottom: 0.5rem;
+}
+
+.bottom-footer-column-2  p {
+    margin-bottom: 0.5rem;
+}
+
+.bottom-footer-column-3 h1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #00cfdd;
+    margin-bottom: 0.5rem;
 }
 
 /*For mobile*/
@@ -553,5 +665,55 @@ footer {
 
     .project-info a {
         font-size: 0.9rem;
+    }
+
+    footer * {
+        font-size: 0.9rem;
+    }
+
+    .top-footer {
+        flex-direction: column;
+    }
+
+    .subcribe {
+        margin-top: 0.5rem;
+        width: 100%;
+    }
+
+    .subcribe input {
+        width: 73%;
+    }
+
+    .subcribe button {
+        width: 27%;
+    }
+
+    .bottom-footer {
+        flex-direction: column;
+    }
+
+    .bottom-footer-column-1, .bottom-footer-column-2, .bottom-footer-column-3 {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .bottom-footer-column-1 h1, .bottom-footer-column-2 h1, .bottom-footer-column-3 h1 {
+        font-size: 1rem;
+    }
+
+    .bottom-footer-column-1 p b span, .bottom-footer-column-2 p b span, .bottom-footer-column-3 p b span {
+        font-size: 0.8rem;
+    }
+
+    .switchboard-footer h1 {
+        font-size: 1rem;
+    }
+
+    .switchboard-footer h1 span {
+        font-size: 0.8rem;
+    }
+
+    .switchboard-footer p {
+        width: 90%;
     }
 }
