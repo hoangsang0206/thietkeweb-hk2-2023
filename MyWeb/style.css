@@ -25,7 +25,7 @@ header {
     z-index: 99;
 }
 
-.header {
+#header {
     width: 100%;
     height: 5rem;
     background: transparent;
@@ -243,10 +243,15 @@ header {
     text-decoration: none;
 }
 
-.mobile-menu > ul > li{
+.mobile-menu > ul > li {
     width: 97%;
     line-height: 2.5rem;
     position: relative;
+}
+
+.mobile-menu > ul > li > a {
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .mobile-menu  #menu-icon {
@@ -259,6 +264,7 @@ header {
     margin-top: 0.65rem;
     right: 0;
     transition: .3s;
+    cursor: pointer;
 }
 
 .mobile-menu > ul > li .fa-chevron-right:hover {
@@ -604,6 +610,202 @@ header {
     color: #5b8dee;
 }
 
+.cart {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.cart table {
+    border: 1px solid #9090a7;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart table th, td {
+    border: 1px solid #9090a7;
+    text-align: center;
+    padding: 0.7rem;
+}
+
+.cart form input{
+    width: 3rem;
+    background: none;
+    text-align: center;
+    border: 1px solid #9090a7;
+}
+
+.cart img {
+    width: 55%;
+}
+
+.cart .stt {
+    width: 5%;
+}
+.cart .product-img {
+    width: 25%;
+}
+
+.cart .product-name {
+    width: 30%;
+}
+
+.cart .quantity {
+    width: 10%;
+}
+
+.cart .price {
+    width: 15%;
+}
+
+.cart .remove {
+    width: 5%;
+}
+
+.cart .product-name a {
+    text-decoration: none;
+}
+
+.cart .product-name a:hover {
+    color: #ac5cd9;
+}
+
+.cart .remove i{
+    cursor: pointer;
+}
+
+.pay {
+    margin-top: 2rem;
+    display: grid;
+    place-items: end;
+}
+
+.pay-btn {
+    width: 13rem;
+    height: 3rem;
+    margin-top: 1rem;
+    background-color: #ff3b3b;
+    border: none;
+    border-radius: 6px;
+}
+
+.total-payment {
+    font-size: 1.2rem;
+}
+
+.total-payment span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ff3b3b;
+}
+
+.pay-btn:hover {
+    background-color: #ff8801;
+}
+
+.pay-btn > a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    background: none;
+}
+
+.student-infomation {
+    width: 100%;
+    padding: 3rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.student-img {
+    width: 30%;
+}
+
+.student-img > img {
+    width: 100%;
+}
+
+.student-info {
+    width: 69%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.student-info > h1 {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.student-info span {
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #0064f6;
+}
+
+.student-info p {
+    font-size: 1.3rem;
+}
+
+.student-info .fa-facebook {
+    font-size: 2rem;
+    margin-top: 0.7rem;
+    color: #0d8df0;
+}
+
+.project-infomation {
+    width: 100%;
+    padding: 3rem 1rem 3rem 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.project-img {
+    width: 30%;
+}
+
+.project-img > img {
+    width: 100%;
+}
+
+.project-info {
+    width: 69%;
+}
+
+.project-info > h1 {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-info > h2 {
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+
+.project-info p {
+    font-size: 1.3rem;
+}
+
+.project-info a {
+    font-size: 1.3rem;
+}
+
+.project-info span {
+    font-size: 1.3rem;
+    color: #0064f6;
+    font-weight: 600;
+}
+
+.project-info a:hover {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #6500cd, #00cfdd);
+}
+
+
 footer {
     width: 100%;
     background-color: #555870;
@@ -726,6 +928,10 @@ footer *{
     font-size: 0.9rem;
 }
 
+.bottom-footer-column-3 {
+    position: relative;
+}
+
 .bottom-footer-column-3 h1 {
     font-size: 1.2rem;
     font-weight: 600;
@@ -733,10 +939,20 @@ footer *{
     margin-bottom: 0.5rem;
 }
 
+.bottom-footer-column-3 button {
+    width: 6rem;
+    height: 2rem;
+    background-color: #ff3b3b;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 /*For mobile*/
 @media only screen and (max-width: 767px) {
     * {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .container {
@@ -751,7 +967,7 @@ footer *{
         position: relative;
     }
 
-    .header {
+    #header {
         height: 4rem;
         justify-content: space-between;
         position: static;
@@ -800,7 +1016,7 @@ footer *{
     
     .content {
         flex-direction: column;
-        margin-top: 1rem;
+        padding-top: 1rem;
     }
 
     .content-text {
@@ -847,7 +1063,7 @@ footer *{
 
     .product-list-items {
         display: grid;
-        grid-template-rows: auto auto;
+        grid-template-rows: auto auto auto;
         grid-template-columns: auto auto;
         gap: 0rem;
     }
@@ -856,7 +1072,7 @@ footer *{
         padding: 1rem 0.5rem 1rem 0.5rem;
     }
 
-    .product-list-item:is(:nth-child(5), :nth-child(6), :nth-child(7), :nth-child(8)) {
+    .product-list-item:is(:nth-child(7), :nth-child(8)) {
         display: none;
     }
 
@@ -888,6 +1104,97 @@ footer *{
     .product-list-item .product-list-item-specs span {
         font-size: 0.7rem;
         color: #5b8dee;
+    }
+
+    .cart {
+        overflow: hidden;
+    }
+
+    .cart table{
+        width: 100%;
+    }
+
+    .cart img {
+        width: 100%;
+    }
+
+    .cart form input {
+        width: 2rem;
+    }
+
+    .cart th, .cart td, .cart a{
+        font-size: 0.7rem;
+    }
+
+    .cart th:nth-child(1),
+    .cart td:nth-child(1) {
+        display: none;
+    }
+
+    .total-payment {
+        font-size: 0.8rem;
+    }
+    
+    .total-payment span {
+        font-size: 0.8rem;
+    }
+
+    .pay-btn {
+        width: 6rem;
+        height: 2em;
+    }
+
+    .pay-btn a {
+        font-size: 0.8rem;
+    }
+
+    .student-infomation {
+        flex-direction: column;
+        padding: 1.5rem 0 0 0;
+    }
+
+    .student-img {
+        width: 100%;
+    }
+
+    .student-info {
+        width: 100%;
+        padding: 0;
+        margin-top: 1rem;
+    }
+
+    .student-info h1 {
+        font-size: 1.3rem;
+    }
+
+    .student-info p, .student-info span {
+        font-size: 0.9rem;
+    }
+
+    .project-infomation {
+        flex-direction: column;
+        padding: 1rem 0 3rem 0;
+    }
+
+    .project-img {
+        display: none;
+    }
+
+    .project-info {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .project-info h1 {
+        font-size: 1.3rem;
+    }
+
+    .project-info h2, .project-info span, .project-info p, .project-info span {
+        font-size: 0.9rem;
+    }
+
+    .project-info a {
+        font-size: 0.9rem;
     }
 
     footer * {
@@ -938,6 +1245,12 @@ footer *{
 
     .switchboard-footer p {
         width: 90%;
+    }
+
+    .bottom-footer-column-3 button {
+        position: static;
+        float: right;
+        margin-top: 1rem;
     }
 }
 
@@ -1004,10 +1317,6 @@ footer *{
         width: 40%;
     }
 
-    .infomation > div:not(:last-child) {
-        padding-top: 0;
-    }
-
     .infomation .video {
         display: none;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
     }
@@ -1018,12 +1327,39 @@ footer *{
 
     .product-list-items {
         display: grid;
-        grid-template-rows: 35rem 35rem;
+        grid-template-rows: 35rem 35rem 35rem;
         grid-template-columns: auto auto auto;
         gap: 0.5rem;
     }
 
-    .product-list-item:is(:nth-child(7), :nth-child(8)) {
+    .student-img {
+        width: 40%;
+        overflow: hidden;
+        display: grid;
+        place-items: center;
+    }
+
+    .student-info {
+        width: 60%;
+    }
+
+    .student-img > img {
+        width: 140%;
+    }
+
+    .project-info {
+        width: 100%;
+    }
+
+    .project-img {
         display: none;
+    }
+
+    .top-footer > p {
+        width: 45%;
+    }
+
+    .subcribe {
+        width: 50%;
     }
 }
