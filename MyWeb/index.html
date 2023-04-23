@@ -11,10 +11,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container-xxl">
             <div id="header">
                 <ul class="menu-for-mobile">
                     <li>
@@ -269,13 +271,13 @@
                                     </ul>
                                     <ul class="megamenu-items">
                                         <a href="#">Bàn phím</a>
-                                        <li><a href="#">Bàn phím/Kit custom</a></li>
+                                        <li><a href="#">Keyboard Kit</a></li>
                                         <li><a href="#">Switch</a></li>
                                         <li><a href="#">Keycap</a></li>
-                                        <li><a href="#">Bàn phím Akko/Monsgeek</a></li>
-                                        <li><a href="#">Bàn phím FL-Esport</a></li>
-                                        <li><a href="#">Bàn phím Razer</a></li>
-                                        <li><a href="#">Bàn phím Corsair</a></li>
+                                        <li><a href="#">Akko/Monsgeek</a></li>
+                                        <li><a href="#">FL-Esport</a></li>
+                                        <li><a href="#">Razer</a></li>
+                                        <li><a href="#">Corsair</a></li>
                                         <li><a href="#">Bàn phím cơ giá rẻ</a></li>
                                     </ul>
                                     <ul class="megamenu-items">
@@ -329,7 +331,7 @@
         </div>
     </header>
     <div class="main">
-        <div class="container">
+        <div class="container-xxl">
             <div class="content">
                 <div class="content-text">
                     <div>
@@ -338,7 +340,7 @@
                         <h3>Chuyên cung cấp các linh kiện máy tính, laptop văn phòng, gaming cao cấp, gaming gears, lưu trữ, thiết bị mạng,...</h3>
                     </div>
                 </div>
-                <div class="slide-show-area">
+               <!-- <div class="slide-show-area">
                     <div class="images-slide-show">
                         <img src="images/aorus-laptop.jpg" />
                         <img src="images/gigabyte-vga.jpg" />
@@ -350,10 +352,57 @@
                         <img src="images/legion-laptop.jpg" />
                     </div>
                 </div>
+                -->
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                        <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                      </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/aorus-laptop.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/aorus-rtx-40s.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/aorus-mainboard.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/gigabyte-vga.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/helios-laptop.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/legion-laptop.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/rog-strix-laptop.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/rog-rtx-40s.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
             </div>
         </div>
         <div class="break"></div>
-        <div class="container">
+        <div class="container-xxl">
             <div class="infomation">
                 <div class="info">
                     <a href="infomation.html">Thông tin sinh viên</a>
@@ -372,7 +421,7 @@
             </div>
         </div>
         <div class="break"></div>
-        <div class="container">
+        <div class="container-xxl">
             <div class="product">
                 <div class="product-list">
                     <div class="product-list-name">
@@ -679,7 +728,7 @@
     </div>
 
     <footer>
-        <div class="container">
+        <div class="container-xxl">
             <div class="top-footer">
                 <p>
                     <i class="fa-solid fa-chevron-right"></i> &nbsp;
@@ -739,5 +788,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>

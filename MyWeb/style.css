@@ -9,9 +9,13 @@
     background-color: #1c1c27;
 }
 
-.container
+body {
+    background-color: #1c1c27;
+}
+
+.container-xxl
 {
-    width: 1300px;
+    /* width: 1300px; */
     margin: auto;
     background: transparent;
     position: relative;
@@ -192,10 +196,11 @@ header {
 }
 
 .menu-for-mobile {
+    margin-top: 1rem;
+    padding: 0;
     list-style-type: none;
     display: none;
     background: none;
-    margin-right: 0.5rem;
 }
 
 .menu-for-mobile > li {
@@ -217,11 +222,11 @@ header {
     position: absolute;
     overflow-y: scroll;
     width: 14rem;
-    height: 89vh;
+    height: 100vh;
     padding: 1rem;
     top: 100%;
     left: -100%;
-    transition: all .5s;
+    transition: .5s;
 }
 
 #check {
@@ -250,14 +255,21 @@ header {
     margin-bottom: 0.6rem;
 }
 
-.mobile-menu ul {
-    list-style-type: none   ;
-    background: none;
+.mobile-menu h1 a {
+    font-weight: 600;
+    font-size: 1.1rem   ;
 }
 
-.mobile-menu ul li, h1, a, nav {
+.mobile-menu > ul {
+    list-style-type: none;
+    background: none;
+    padding: 0;
+}
+
+.mobile-menu ul li, .mobile-menu h1,.mobile-menu a, .mobile-menu nav {
     background: none;
     text-decoration: none;
+    color: white;
 }
 
 .mobile-menu > ul > li {
@@ -296,7 +308,20 @@ header {
     line-height: 2rem;
 }
 
+.mobile-menu > nav ul {
+    list-style-type: none;
+    background: none;
+    padding: 0;
+}
+
+.mobile-menu > nav ul h1 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
 .mobile-menu-item {
+    list-style-type: none;
+    background: none;
     padding-left: 1.6rem;
     line-height: 1.8rem;
     display: none;
@@ -330,6 +355,7 @@ header {
     background: transparent;
     list-style-type: disc;
     margin-bottom: 20px;
+    padding: 0;
 }
 
 .megamenu-items > a
@@ -354,6 +380,7 @@ header {
 
 .megamenu-items li a {
     text-decoration: none;
+    color: white;
     background: none;
 }
 
@@ -371,6 +398,7 @@ header {
     width: 40%;
     display: flex;
     align-items: center;
+    padding-right: 1rem;
 }
 
 .content-text > div {
@@ -389,6 +417,7 @@ header {
 }
 
 .content-text > div h3 {
+    font-size: 1.2rem;
     font-weight: 300;
     color: #73dfe7;
 }
@@ -407,71 +436,16 @@ header {
     background-image: linear-gradient(to right, #6500cd, #00cfdd);
 }
 
-.slide-show-area {
-    overflow: hidden;
+.slide {
     width: 60%;
 }
 
-.images-slide-show {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    animation: slideshow 48s infinite;
+.carousel-indicators {
+    background: none;
 }
 
-.images-slide-show > img {
-    width: 100%;
-}
-
-@keyframes slideshow {
-    6.25% {
-        margin-left: 0;
-    }
-   12.5% {
-        margin-left: 0;
-    }
-    18.75% {
-        margin-left: -100%;
-    }
-    25% {
-        margin-left: -100%;
-    }
-    31.25% {
-        margin-left: -200%;
-    }
-    37.5% {
-        margin-left: -200%;
-    }
-    43.75% {
-        margin-left: -300%;
-    }
-    50% {
-        margin-left: -300%;
-    }
-    56.25% {
-        margin-left: -400%;
-    }
-    62.5% {
-        margin-left: -400%;
-    }
-    68.75% {
-        margin-left: -500%;
-    }
-    75% {
-        margin-left: -500%;
-    }
-    81.25% {
-        margin-left: -600%;
-    }
-    87.5% {
-        margin-left: -600%;
-    }
-    93.75% {
-        margin-left: -700%;
-    }
-    100% {
-        margin-left: -700%;
-    }
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background: none;
 }
 
 .break {
@@ -499,6 +473,7 @@ header {
 
 .infomation > div > a {
     text-decoration: none;
+    color: white;
     font-size: 1.5rem;
     font-weight: 600;
 }
@@ -523,6 +498,7 @@ header {
 
 .infomation button a {
     text-decoration: none;
+    color: white;
     background: none;
 }
 
@@ -567,7 +543,7 @@ header {
 
 .product-list-items {
     display: grid;
-    grid-template-rows: 35rem 35rem;
+    grid-template-rows: auto auto;
     grid-template-columns: auto auto auto auto;
     gap: 0.5rem;
 }
@@ -581,6 +557,16 @@ header {
     gap: 0.6rem;
 }
 
+.product-list-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.product-list-item h1 {
+    margin-top: 0.5rem;
+    font-weight: 600;
+}
+
 .product-list-item img {
     width: 90%;
     background: none;
@@ -590,7 +576,7 @@ header {
     border: 1px solid #9090a7;
 }
 
-.product-list-item  img:hover {
+.product-list-item img:hover {
     scale: 1.1;
 }
 
@@ -614,12 +600,13 @@ header {
 }
 
 .product-list-item .product-list-item-specs {
+    padding-top: 0.5rem;
     border-top: 1px solid #9090a7;
 }
 
 .product-list-item .product-list-item-specs p {
     font-size: 0.9rem;
-    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
 }
 
 .product-list-item .product-list-item-specs span {
@@ -728,12 +715,13 @@ header {
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: 600;
+    color: white;
     background: none;
 }
 
 .student-infomation {
     width: 100%;
-    padding: 3rem 1rem 1rem 1rem;
+    padding: 3rem 0 1rem 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -777,7 +765,7 @@ header {
 
 .project-infomation {
     width: 100%;
-    padding: 3rem 1rem 3rem 1rem;
+    padding: 3rem 0 3rem 0;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -873,7 +861,7 @@ footer *{
 }
 
 .subcribe button {
-    width: 20%;
+    width: 21%;
     background-color: #ff3b3b;
     border: none;
     cursor: pointer;
@@ -971,17 +959,20 @@ footer *{
     right: 0;
 }
 
+.bottom-footer-column-3 button  a {
+    text-decoration: none;
+    color: white;
+}
+
 /*For mobile*/
 @media only screen and (max-width: 767px) {
     * {
         font-size: 0.9rem;
     }
 
-    .container {
-        width: 100%;
+    .container-xxl {
+        /* width: 100%; */
         margin: 0;
-        padding-left: 0.6rem;
-        padding-right: 0.6rem;
         box-sizing: border-box;
     }
 
@@ -1044,7 +1035,6 @@ footer *{
         width: 100%;
     }
 
-
     .content-text > div h1 {
         font-size: 1.7rem;
     }
@@ -1057,7 +1047,7 @@ footer *{
         font-size: 0.9rem;
     }
    
-    .slide-show-area {
+    .slide {
         width: 100%;
         margin-top: 2rem;
     }
@@ -1285,8 +1275,8 @@ footer *{
         position: relative;
     }
 
-    .container {
-        width: 100%;
+    .container-xxl {
+       /* width: 100%; */
         margin: 0;
         padding-left: 2rem;
         padding-right: 2rem;
@@ -1334,7 +1324,7 @@ footer *{
         font-size: 1.6rem;
     }
 
-    .slide-show-area {
+    .slide {
         width: 100%;
     }
 
@@ -1352,7 +1342,7 @@ footer *{
 
     .product-list-items {
         display: grid;
-        grid-template-rows: 35rem 35rem 35rem;
+        grid-template-rows: auto auto auto;
         grid-template-columns: auto auto auto;
         gap: 0.5rem;
     }
