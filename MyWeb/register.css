@@ -25,9 +25,6 @@ header {
     width: 100%;
     background: transparent;
     border-bottom: 1px solid #6a6a7a;
-    position: sticky;
-    top: 0;
-    z-index: 99;
 }
 
 .header {
@@ -125,10 +122,25 @@ header {
 
 .navigation > ul > li > a {
     text-decoration: none;
+    color: white;
     font-size: 1.12rem;
     font-weight: 500;
-    transition: .5s ease-in-out;
+    position: relative;
+    transition: .5s;
     background: transparent;
+}
+
+.navigation > ul > li > a::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    transform: scaleX(0);
+    transition: .5s;
 }
 
 .navigation > ul > li > a:hover {
@@ -136,6 +148,10 @@ header {
     -webkit-background-clip: text;
     color: transparent;
     background-image: linear-gradient(to right, #ff3838, #ffaf40);
+}
+
+.navigation > ul > li > a:hover::after {
+    transform: scaleX(1);
 }
 
 .register {
@@ -156,7 +172,6 @@ header {
     backdrop-filter: blur(10px);
     border: 1px solid white;
     border-radius: 1rem;
-    box-shadow: 0 0 2rem lightgray;
 }
 
 .register-form > h1 {
@@ -300,10 +315,6 @@ header {
         box-sizing: border-box;
     }
 
-    header {
-        position: relative;
-    }
-
     body {
         background-size: auto;
     }
@@ -311,8 +322,8 @@ header {
     .header {
         height: 4rem;
         justify-content: space-between;
-        position: static;
     }
+
     .logo {
         font-size: 2rem;
         margin-right: 0.5rem;
@@ -360,6 +371,76 @@ header {
         margin-top: 1.5rem;
         margin-bottom: 2rem;
     }
+}
 
-    
+/*For tablet*/
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+    * {
+        font-size: 1rem;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-size: auto;
+    }
+
+    .header {
+        height: 4rem;
+        justify-content: space-between;
+    }
+
+    .logo {
+        font-size: 2rem;
+        margin-right: 0.5rem;
+    }
+
+    .search-box {
+        margin-left: 0;
+        width: 400px;
+        height: 2rem;
+    }
+
+    .search-box input {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .search-box input::placeholder {
+        font-size: 0.9rem;
+    }
+
+    .search-box button {
+        width: 4rem;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .register {
+        height: auto;
+    }
+
+    .register-form {
+        width: 400px;
+        margin-top: 4rem;
+        padding: 2rem;
+    }
+
+    .register-form > h1 {
+        font-size: 1.7rem;
+    }
+
+    .back-to-home {
+        display: block;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+    }
 }
