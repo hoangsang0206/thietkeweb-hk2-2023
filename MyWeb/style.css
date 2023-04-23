@@ -728,7 +728,9 @@ header {
 }
 
 .student-img {
-    width: 30%;
+    width: 35%;
+    display: flex;
+    align-items: center;
 }
 
 .student-img > img {
@@ -736,7 +738,7 @@ header {
 }
 
 .student-info {
-    width: 69%;
+    width: 65%;
     padding: 1rem;
     box-sizing: border-box;
 }
@@ -772,7 +774,7 @@ header {
 }
 
 .project-img {
-    width: 30%;
+    width: 35%;
 }
 
 .project-img > img {
@@ -780,7 +782,8 @@ header {
 }
 
 .project-info {
-    width: 69%;
+    width: 65%;
+    padding-right: 0.5rem;
 }
 
 .project-info > h1 {
