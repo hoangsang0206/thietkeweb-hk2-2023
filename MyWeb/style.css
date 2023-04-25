@@ -404,8 +404,23 @@ header {
 }
 
 .content-text > div h1 {
-    font-size: 3rem;
+    font-size: 3.3rem;
     font-weight: 600;
+    background: linear-gradient(90deg, #ff0000, #ffff00, #ff00f3, #0033ff, #ff00c4, #ff0000);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: wave 10s linear infinite;
+}
+
+@keyframes wave {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
 }
 
 .content-text > div h2 {
@@ -655,6 +670,7 @@ header {
     margin-left: 1rem;
 }
 
+/* Cart page------------------------------------------------------------------*/
 .cart {
     padding-top: 3rem;
     padding-bottom: 2rem;
@@ -760,6 +776,8 @@ header {
     background: none;
 }
 
+
+/* Infomation page------------------------------------------------------------------*/
 .student-infomation {
     width: 100%;
     padding: 3rem 0 1rem 0;
@@ -863,6 +881,57 @@ header {
     background-image: linear-gradient(to right, #6500cd, #00cfdd);
 }
 
+/* Product list page------------------------------------------------------------------*/
+.product-list-page {
+    padding: 2.5rem 0rem;
+}
+
+.filter-list {
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filter-list button {
+    padding: 0.2rem 0.6rem;
+    margin-right: 1rem;
+    background: #0063f8;
+    display: flex;
+    border: none;
+    border-radius: 3px;
+}
+
+.filter-list button i { 
+    height: 100%;
+}
+
+.filter-list button i:not(:first-child) {
+    margin-left: 0.3rem;
+}
+
+.filter-list button i:first-child {
+    margin-right: 0.3rem;
+    display: grid;
+    place-items: center;
+}
+
+.filter-list button span {
+    background: none;
+}
+
+.manufacturer-logo {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.manufacturer-logo button {
+    width: 10rem;
+}
+
+.manufacturer-logo button img {
+    width: 100%;
+}
 
 footer {
     width: 100%;
@@ -1007,7 +1076,7 @@ footer *{
     right: 0;
 }
 
-.bottom-footer-column-3 button  a {
+.bottom-footer-column-3 button a {
     text-decoration: none;
     color: white;
 }
@@ -1030,7 +1099,6 @@ footer *{
 
     #header {
         height: 4rem;
-        justify-content: space-between;
     }
 
     .logo {
