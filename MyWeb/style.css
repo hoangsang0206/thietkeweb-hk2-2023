@@ -6,7 +6,7 @@
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     color: white;
-    background-color: #1c1c27;
+    background: #1c1c27;;
 }
 
 .container-xxl
@@ -546,7 +546,7 @@ header {
 }
 
 .product-list-item {
-    padding: 1rem 0.8rem 2.5rem 0.8rem;
+    padding: 1rem 0.8rem 1em 0.8rem;
     border: 1px solid #555870;
     box-sizing: border-box;
     position: relative;
@@ -575,10 +575,6 @@ header {
     border: 1px solid #9090a7;
 }
 
-.product-list-item img:hover {
-    scale: 1.1;
-}
-
 .product-list-item .product-list-item-img {
     width: 100%;
     height: 14rem;
@@ -600,18 +596,32 @@ header {
 }
 
 .product-list-item .product-list-item-specs {
-    padding-top: 0.5rem;
-    border-top: 1px solid #9090a7;
+    height: 100%;
+    padding-top: 0.8rem;
+    position: absolute;
+    bottom: -100%;
+    transition: .7s;
+}
+
+.product-list-item:hover .product-list-item-specs {
+    bottom: 0;
 }
 
 .product-list-item .product-list-item-specs p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-bottom: 0.3rem;
 }
 
 .product-list-item .product-list-item-specs span {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #5b8dee;
+}
+
+.product-list-item .product-list-item-specs a {
+    color: #ac5cd9;
+    font-size: 0.9rem;
+    line-height: 3.5rem;
+    background: none;
 }
 
 .buy-and-add-to-cart {
@@ -1145,6 +1155,12 @@ footer *{
         font-size: 1.2rem;
     }
 
+    .product-list-item .product-list-item-specs {
+        position: static;
+        height: auto;
+        border-top: 1px solid #9090a7;
+    }
+
     .product-list-item .product-list-item-specs p {
         font-size: 0.7rem;
     }
@@ -1152,6 +1168,10 @@ footer *{
     .product-list-item .product-list-item-specs span {
         font-size: 0.7rem;
         color: #5b8dee;
+    }
+
+    .product-list-item .product-list-item-specs a {
+        display: none;
     }
 
     .buy-and-add-to-cart {
@@ -1390,6 +1410,24 @@ footer *{
 
     .product-list-item {
         padding: 1rem 0.8rem 1rem 0.8rem;
+    }
+
+    .product-list-item .product-list-item-specs {
+        position: static;
+        height: auto;
+        border-top: 1px solid #9090a7;
+    }
+
+    .product-list-item .product-list-item-specs p {
+        font-size: 0.9rem;
+    }
+    
+    .product-list-item .product-list-item-specs span {
+        font-size: 0.9rem;
+    }
+
+    .product-list-item .product-list-item-specs a {
+        display: none;
     }
 
     .buy-and-add-to-cart {
