@@ -9,10 +9,6 @@
     background-color: #1c1c27;
 }
 
-body {
-    background-color: #1c1c27;
-}
-
 .container-xxl
 {
     /* width: 1300px; */
@@ -224,6 +220,7 @@ header {
     width: 14rem;
     height: 100vh;
     padding: 1rem;
+    padding-bottom: 10rem;
     top: 100%;
     left: -100%;
     transition: .5s;
@@ -803,6 +800,8 @@ header {
 
 .project-info a {
     font-size: 1.3rem;
+    text-decoration: none;
+    color: white;
 }
 
 .project-info span {
@@ -988,10 +987,9 @@ footer *{
         justify-content: space-between;
     }
 
-
     .logo {
         font-size: 2rem;
-        margin-right: 0.5rem;
+        margin-right: 1rem;
     }
 
     .search-box {
@@ -1026,7 +1024,7 @@ footer *{
     }
 
     .menu-for-mobile {
-        display: block;
+        display: block
     }
     
     .content {
