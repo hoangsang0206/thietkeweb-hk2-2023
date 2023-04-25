@@ -777,6 +777,7 @@ header {
 .student-info > h1 {
     text-align: center;
     font-size: 1.6rem;
+    font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
@@ -820,6 +821,7 @@ header {
 .project-info > h1 {
     text-align: center;
     font-size: 1.6rem;
+    font-weight: 600;
     margin-bottom: 0.5rem;
 }
 
@@ -1152,6 +1154,10 @@ footer *{
         color: #5b8dee;
     }
 
+    .buy-and-add-to-cart {
+        display: none;
+    }
+
     .cart {
         overflow: hidden;
     }
@@ -1380,6 +1386,14 @@ footer *{
         grid-template-rows: auto auto auto;
         grid-template-columns: auto auto auto;
         gap: 0.5rem;
+    }
+
+    .product-list-item {
+        padding: 1rem 0.8rem 1rem 0.8rem;
+    }
+
+    .buy-and-add-to-cart {
+        display: none;
     }
 
     .student-img {
