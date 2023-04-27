@@ -4,9 +4,397 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>STech - Hi-end PC & Gaming Gear</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--Icon from https://fontawesome.com/-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
 <body>
-    
+    <header>
+        <div class="container-xxl">
+            <div id="header">
+                <ul class="menu-for-mobile">
+                    <li>
+                        <input type="checkbox" id="check">
+                        <label for="check"><i class="fa-solid fa-bars"></i></label>
+                        <div class="mobile-menu">
+                            <a href="login.html" class="mobile-login-btn"><i class="fa-solid fa-user"></i>Đăng nhập/Đăng ký</a>
+                            <div class="menu-break"></div>
+                            <h1><a href="#">Sản phẩm</a></h1>
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-laptop" id="menu-icon"></i>
+                                    <a href="product-list.html">Laptop</a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="mobile-menu-item">
+                                        <li><a href="#">Asus</a></li>
+                                        <li><a href="#">Acer</a></li>
+                                        <li><a href="#">Dell</a></li>
+                                        <li><a href="#">Lenovo</a></li>
+                                        <li><a href="#">MSI</a></li>
+                                        <li><a href="#">HP</a></li>
+                                        <li><a href="#">Gigabyte</a></li>
+                                        <li><a href="#">LG</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-laptop" id="menu-icon"></i>
+                                    <a href="product-list.html">Laptop Gaming</a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="mobile-menu-item">
+                                        <li><a href="#">Asus TUF/ROG</a></li>
+                                        <li><a href="#">Acer Nitro/Predator</a></li>
+                                        <li><a href="#">Dell G/Alienware</a></li>
+                                        <li><a href="#">Lenovo Ideapad/Legion</a></li>
+                                        <li><a href="#">MSI Cyborg/GP/GE/GT</a></li>
+                                        <li><a href="#">HP Victus/Omen</a></li>
+                                        <li><a href="#">Gigabyte G/Aorus/Aero</a></li>
+                                        <li><a href="#">Razer Blade</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <i class="fa-sharp fa-solid fa-microchip" id="menu-icon"></i>
+                                    <a href="#">Linh kiện PC</a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="mobile-menu-item">
+                                        <li><a href="#">CPU - Bộ vi xử lý</a></li>
+                                        <li><a href="#">VGA - Card đồ họa</a></li>
+                                        <li><a href="#">Bo mạch chủ</a></li>
+                                        <li><a href="#">RAM</a></li>
+                                        <li><a href="#">Ổ cứng SSD/HDD</a></li>
+                                        <li><a href="#">Case máy tính</a></li>
+                                        <li><a href="#">PSU - Nguồn máy tính</a></li>
+                                        <li><a href="#">Quạt tản nhiệt</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-computer" id="menu-icon"></i>
+                                    <a href="#">PC build sẵn</a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="mobile-menu-item">
+                                        <li><a href="#">STek i1650</a></li>
+                                        <li><a href="#">STek i2060</a></li>
+                                        <li><a href="#">STek i3060</a></li>
+                                        <li><a href="#">STek i3090</a></li>
+                                        <li><a href="#">STek i4070</a></li>
+                                        <li><a href="#">STek i4090</a></li>
+                                        <li><a href="#">STek r3070</a></li>
+                                        <li><a href="#">STek r4090</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-desktop" id="menu-icon"></i>
+                                    <a href="#">Màn hình</a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="mobile-menu-item">
+                                        <li><a href="#">Màn hình đồ họa</a></li>
+                                        <li><a href="#">Màn hình gaming</a></li>
+                                        <li><a href="#">Màn hình 24"</a></li>
+                                        <li><a href="#">Màn hình 27"</a></li>
+                                        <li><a href="#">Màn hình 32"</a></li>
+                                        <li><a href="#">Màn hình FHD</a></li>
+                                        <li><a href="#">Màn hình 2k</a></li>
+                                        <li><a href="#">Màn hình 4k</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-keyboard" id="menu-icon"></i>
+                                    <a href="">Bàn phím</a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="mobile-menu-item">
+                                        <li><a href="#">Bàn phím/Kit custom</a></li>
+                                        <li><a href="#">Switch</a></li>
+                                        <li><a href="#">Keycap</a></li>
+                                        <li><a href="#">Bàn phím Akko/Monsgeek</a></li>
+                                        <li><a href="#">Bàn phím FL-Esport</a></li>
+                                        <li><a href="#">Bàn phím Razer</a></li>
+                                        <li><a href="#">Bàn phím Corsair</a></li>
+                                        <li><a href="#">Bàn phím cơ giá rẻ</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-computer-mouse" id="menu-icon"></i>
+                                    <a href="#">Chuột</a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="mobile-menu-item">
+                                        <li><a href="#">Logitech</a></li>
+                                        <li><a href="#">Razer</a></li>
+                                        <li><a href="#">Corsair</a></li>
+                                        <li><a href="#">Zowie</a></li>
+                                        <li><a href="#">Pulsar</a></li>
+                                        <li><a href="#">Asus</a></li>
+                                        <li><a href="#">Steelseries</a></li>
+                                        <li><a href="#">Chuột văn phòng</a></li>
+                                    </ul>
+                                    </li>
+                                <li>
+                                    <i class="fa-solid fa-headphones-simple" id="menu-icon"></i>
+                                    <a href="#">Loa, tai nghe</a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="mobile-menu-item">
+                                        <li><a href="#">Logitech</a></li>
+                                        <li><a href="#">Razer</a></li>
+                                        <li><a href="#">Corsair</a></li>
+                                        <li><a href="#">Asus</a></li>
+                                        <li><a href="#">Steelseries</a></li>    
+                                        <li><a href="#">Sony</a></li>
+                                        <li><a href="#">HyperX</a></li>
+                                        <li><a href="#">Loa các loại</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-robot" id="menu-icon"></i>
+                                    <a href="#">Phần mềm</a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="mobile-menu-item">
+                                        <li><a href="#">Microsoft 365</a></li>
+                                        <li><a href="#">Windows 10/11</a></li>
+                                        <li><a href="#">Phần mềm diệt virus</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-wifi" id="menu-icon"></i>
+                                    <a href="#">Thiết bị mạng</a>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                    <ul class="mobile-menu-item">
+                                        <li><a href="#">Card WiFi</a></li>
+                                        <li><a href="#">Router WiFi</a></li>
+                                        <li><a href="#">USB thu sóng WiFi</a></li>
+                                        <li><a href="#">Dây Ethenet</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="menu-break"></div>
+                            <nav>
+                                <ul>
+                                    <h1>Thông tin</h1>
+                                    <li><a href="infomation.html">
+                                        <i class="fa-solid fa-circle-info" id="menu-icon"></i>
+                                        Thông tin sinh viên
+                                    </a></li>
+                                    <li><a href="https://thenextweb.com/" target="_blank">
+                                        <i class="fa-solid fa-newspaper" id="menu-icon"></i>
+                                        Tin tức công nghệ
+                                    </a></li>
+                                    <li><a href="#">
+                                        <i class="fa-solid fa-comment-dollar" id="menu-icon"></i>
+                                        Tư vấn mua hàng
+                                    </a></li>
+                                    <li><a href="#">
+                                        <i class="fa-solid fa-screwdriver-wrench" id="menu-icon"></i>
+                                        Bảo hành
+                                    </a></li>
+                                    <li><a href="#">
+                                        <i class="fa-solid fa-money-check-dollar" id="menu-icon"></i>
+                                        Trả góp
+                                    </a></li>
+                                    <li><a href="#">
+                                        <i class="fa-solid fa-phone" id="menu-icon"></i>
+                                        Liên hệ
+                                    </a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </li>
+                </ul>
+                <div class="logo">
+                    <a href="index.html" class="logo">STech</a>
+                </div>
+                <form action="#" class="search-box">
+                    <input type="text" placeholder="Nhập tên sản phẩm" />
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <div class="navigation">
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li class="menu">
+                            <a href="#">Sản phẩm</a>
+                            <div class="megamenu">
+                                <div class="megamenu_1">
+                                    <ul class="megamenu-items">
+                                        <a href="product-list.html">Laptop</a>
+                                        <li><a href="#">Asus</a></li>
+                                        <li><a href="#">Acer</a></li>
+                                        <li><a href="#">Dell</a></li>
+                                        <li><a href="#">Lenovo</a></li>
+                                        <li><a href="#">MSI</a></li>
+                                        <li><a href="#">HP</a></li>
+                                        <li><a href="#">Gigabyte</a></li>
+                                        <li><a href="#">LG</a></li>
+                                    </ul>
+                                    <ul class="megamenu-items">
+                                        <a href="product-list.html">Laptop Gaming</a>
+                                        <li><a href="#">Asus TUF/ROG</a></li>
+                                        <li><a href="#">Acer Nitro/Predator</a></li>
+                                        <li><a href="#">Dell G/Alienware</a></li>
+                                        <li><a href="#">Lenovo Ideapad/Legion</a></li>
+                                        <li><a href="#">MSI Cyborg/GP/GE/GT</a></li>
+                                        <li><a href="#">HP Victus/Omen</a></li>
+                                        <li><a href="#">Gigabyte G/Aorus/Aero</a></li>
+                                        <li><a href="#">Razer Blade</a></li>
+                                    </ul>
+                                    <ul class="megamenu-items">
+                                        <a href="#">Linh kiện PC</a>
+                                        <li><a href="#">CPU - Bộ vi xử lý</a></li>
+                                        <li><a href="#">VGA - Card đồ họa</a></li>
+                                        <li><a href="#">Bo mạch chủ</a></li>
+                                        <li><a href="#">RAM</a></li>
+                                        <li><a href="#">Ổ cứng SSD/HDD</a></li>
+                                        <li><a href="#">Case máy tính</a></li>
+                                        <li><a href="#">PSU - Nguồn máy tính</a></li>
+                                        <li><a href="#">Quạt tản nhiệt</a></li>
+                                    </ul>
+                                    <ul class="megamenu-items">
+                                        <a href="#">PC build sẵn</a>
+                                        <li><a href="#">STek i1650</a></li>
+                                        <li><a href="#">STek i2060</a></li>
+                                        <li><a href="#">STek i3060</a></li>
+                                        <li><a href="#">STek i3090</a></li>
+                                        <li><a href="#">STek i4070</a></li>
+                                        <li><a href="#">STek i4090</a></li>
+                                        <li><a href="#">STek r3070</a></li>
+                                        <li><a href="#">STek r4090</a></li>
+                                    </ul>
+                                    <ul class="megamenu-items">
+                                        <a href="#">Màn hình</a>
+                                        <li><a href="#">Màn hình đồ họa</a></li>
+                                        <li><a href="#">Màn hình gaming</a></li>
+                                        <li><a href="#">Màn hình 24"</a></li>
+                                        <li><a href="#">Màn hình 27"</a></li>
+                                        <li><a href="#">Màn hình 32"</a></li>
+                                        <li><a href="#">Màn hình FHD</a></li>
+                                        <li><a href="#">Màn hình 2k</a></li>
+                                        <li><a href="#">Màn hình 4k</a></li>
+                                    </ul>
+                                    <ul class="megamenu-items">
+                                        <a href="#">Bàn phím</a>
+                                        <li><a href="#">Keyboard Kit</a></li>
+                                        <li><a href="#">Switch</a></li>
+                                        <li><a href="#">Keycap</a></li>
+                                        <li><a href="#">Akko/Monsgeek</a></li>
+                                        <li><a href="#">FL-Esport</a></li>
+                                        <li><a href="#">Razer</a></li>
+                                        <li><a href="#">Corsair</a></li>
+                                        <li><a href="#">Bàn phím cơ giá rẻ</a></li>
+                                    </ul>
+                                    <ul class="megamenu-items">
+                                        <a href="#">Chuột</a>
+                                        <li><a href="#">Logitech</a></li>
+                                        <li><a href="#">Razer</a></li>
+                                        <li><a href="#">Corsair</a></li>
+                                        <li><a href="#">Zowie</a></li>
+                                        <li><a href="#">Pulsar</a></li>
+                                        <li><a href="#">Asus</a></li>
+                                        <li><a href="#">Steelseries</a></li>
+                                        <li><a href="#">Chuột văn phòng</a></li>
+                                    </ul>
+                                    <ul class="megamenu-items">
+                                        <a href="#">Loa, Tai nghe</a>
+                                        <li><a href="#">Logitech</a></li>
+                                        <li><a href="#">Razer</a></li>
+                                        <li><a href="#">Corsair</a></li>
+                                        <li><a href="#">Asus</a></li>
+                                        <li><a href="#">Steelseries</a></li>    
+                                        <li><a href="#">Sony</a></li>
+                                        <li><a href="#">HyperX</a></li>
+                                        <li><a href="#">Loa các loại</a></li>
+                                    </ul>
+                                    <ul class="megamenu-items">
+                                        <a href="#">Phần mềm</a>
+                                        <li><a href="#">Microsoft 365</a></li>
+                                        <li><a href="#">Windows 10/11</a></li>
+                                        <li><a href="#">Phần mềm diệt virus</a></li>
+                                    </ul>
+                                    <ul class="megamenu-items">
+                                        <a href="#">Thiết bị mạng</a>
+                                        <li><a href="#">Card WiFi</a></li>
+                                        <li><a href="#">Router WiFi</a></li>
+                                        <li><a href="#">USB thu sóng WiFi</a></li>
+                                        <li><a href="#">Dây Ethenet</a></li>
+                                    </ul>
+                                </div>  
+                            </div>
+                        </li>
+                        <li><a href="#">Bảo hành</a></li>
+                        <li><a href="#">Trả góp</a></li>
+                        <li><a href="#">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="cart-login">
+                    <a href="cart.html" class="cart-btn"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href="login.html" class="login-btn"><i class="fa-solid fa-user"></i></a>
+                </div> 
+            </div>
+        </div>
+    </header>
+
+    <footer>
+        <div class="container-xxl">
+            <div class="top-footer">
+                <p>
+                    <i class="fa-solid fa-chevron-right"></i> &nbsp;
+                    Đăng ký để nhận thông tin về các chương trình khuyến mãi mới nhất tại STech</p>
+                <form  class="subcribe">
+                    <input type="email" placeholder="Nhập email của bạn" required />
+                    <button type="submit">Đăng ký</button>
+                </form>
+            </div>
+            <div class="bottom-footer">
+                <div class="bottom-footer-column-1">
+                    <h1>CÔNG TY TNHH THƯƠNG MẠI STECH <br/>
+                        EMAIL: ..........................................
+                    </h1>
+                    <div class="switchboard-footer">
+                        <h1>HỆ THỐNG TỔNG ĐÀI MIỄN PHÍ: <span>(Làm việc từ 8h00 - 21h00)</span></h1>
+                        <p>Gọi mua hàng: <span>.........................................</span></p>
+                        <p>Hỗ trợ khách hàng: <span>.........................................</span></p>
+                        <p>Gọi bảo hành: <span>.........................................</span></p>
+                    </div>
+                    <div class="policy-footer">
+                        <a href="#">Chính sách bảo hành</a>
+                        <a href="#">Chính sách thanh toán</a>
+                        <a href="#">Chính sách giao hàng</a>
+                        <a href="#">Chính sách bảo mật</a>
+                    </div>
+                </div>
+                <div class="bottom-footer-column-2">
+                    <h1>HỆ THỐNG CỬA HÀNG:</h1>
+                    <p>
+                        <b>SHOWROOM HCM <span>(Làm việc từ 8h00 - 21h00)</span></b> <br />
+                        - Địa chỉ 1: .................................................... <br />
+                        - Địa chỉ 2: .................................................... <br />
+                        - Địa chỉ 3: .................................................... <br />
+                        - Địa chỉ 4: ....................................................
+                    </p>
+                    <p>
+                        <b>SHOWROOM HN <span>(Làm việc từ 8h00 - 21h00)</span></b> <br />
+                        - Địa chỉ 1: .................................................... <br />
+                        - Địa chỉ 2: .................................................... <br />
+                        - Địa chỉ 3: ....................................................
+                    </p>
+                    <h1>TRUNG TÂM BẢO HÀNH:</h1>
+                    <p>
+                        - Địa chỉ: ....................................................
+                    </p>
+                </div>
+                <div class="bottom-footer-column-3">
+                    <h1>FANPAGE</h1>
+                    - ..............................................................................
+                    <h1>YOUTUBE</h1>
+                    - ..............................................................................
+                    <h1>ZALO</h1>
+                    - ..............................................................................
+                    <button><a href="#header">Lên đầu</a></button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -98,6 +98,10 @@ header {
     cursor: pointer;
 }
 
+.search-box button:hover i {
+    color: #00cfdd;
+}
+
 .navigation {
     margin-left: 4rem;
     background: transparent;
@@ -886,6 +890,25 @@ header {
     padding: 2.5rem 0rem;
 }
 
+.where-am-i {
+    margin-bottom: 2rem;
+    width: 100%;
+    padding: 0.2rem 0;
+    border-bottom: 1px solid #9090a7;
+}
+
+.where-am-i a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    background: none;
+    color: white;
+}
+
+.where-am-i i {
+    font-size: 0.8rem;
+    margin: 0 0.3rem;
+}
+
 .filter-list {
     
     display: flex;
@@ -926,16 +949,26 @@ header {
 }
 
 .manufacturer-logo button {
-    width: 10rem;
+    width: 9rem;
+    margin-bottom: 2rem;
+    padding: 0 0.8rem;
+    border-radius: 1.8rem;
+    background: white;
+    box-sizing: border-box;
+    border: none;
+    margin-right: 1rem;
+    overflow: hidden;
 }
 
 .manufacturer-logo button img {
     width: 100%;
+    background: transparent;
 }
 
 .product-list-product-page {
     display: grid;
     grid-template-columns: auto auto auto auto;
+    gap: 0.5rem;
 }
 
 /*Footer -------------------------------------------------------------------------*/
