@@ -406,7 +406,7 @@ header {
 .content-text > div h1 {
     font-size: 3.3rem;
     font-weight: 600;
-    background: linear-gradient(90deg, #ff0000, #ffff00, #ff00f3, #0033ff, #ff00c4, #ff0000);
+    background: linear-gradient(to right, #ff0000, #ffff00, #ff00f3, #0033ff, #ff00c4, #ff0000);
     background-size: 400%;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -933,6 +933,12 @@ header {
     width: 100%;
 }
 
+.product-list-product-page {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+/*Footer -------------------------------------------------------------------------*/
 footer {
     width: 100%;
     background-color: #555870;
