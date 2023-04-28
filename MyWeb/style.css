@@ -891,7 +891,7 @@ header {
 }
 
 .where-am-i {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     width: 100%;
     padding: 0.2rem 0;
     border-bottom: 1px solid #9090a7;
@@ -910,7 +910,7 @@ header {
 }
 
 .filter-list {
-    
+    padding: 0.5rem 0;
     display: flex;
     flex-wrap: wrap;
 }
@@ -945,12 +945,12 @@ header {
 .manufacturer-logo {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 .manufacturer-logo button {
     width: 9rem;
-    margin-bottom: 2rem;
     padding: 0 0.8rem;
     border-radius: 1.8rem;
     background: white;
@@ -1285,6 +1285,7 @@ footer *{
         display: none;
     }
 
+    /*Cart page ----------------------------------------------------------- */
     .cart {
         overflow: hidden;
     }
@@ -1327,6 +1328,7 @@ footer *{
         font-size: 0.8rem;
     }
 
+    /*Infomation ----------------------------------------------------------- */
     .student-infomation {
         flex-direction: column;
         padding: 1.5rem 0 0 0;
@@ -1376,6 +1378,20 @@ footer *{
         font-size: 0.9rem;
     }
 
+    /*Product list page ----------------------------------------------------------- */
+    .filter-list {
+        gap: 0.5rem;
+    }
+
+    .manufacturer-logo {
+        gap: 0.7rem;
+    }
+
+    .product-list-product-page {
+        grid-template-columns: auto auto;
+    }
+
+    /*Footer ----------------------------------------------------------- */
     footer * {
         font-size: 0.9rem;
     }
@@ -1541,6 +1557,7 @@ footer *{
         display: none;
     }
 
+    /*Infomation page ----------------------------------------------------------- */
     .student-img {
         width: 40%;
         overflow: hidden;
@@ -1564,6 +1581,20 @@ footer *{
         display: none;
     }
 
+    /*Product list page ----------------------------------------------------------- */
+    .filter-list {
+        gap: 0.5rem;
+    }
+
+    .manufacturer-logo {
+        gap: 0.7rem;
+    }
+
+    .product-list-product-page {
+        grid-template-columns: auto auto auto;
+    }
+
+    /*Footer ----------------------------------------------------------- */
     .top-footer > p {
         width: 45%;
     }
