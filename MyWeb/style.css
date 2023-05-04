@@ -17,6 +17,10 @@
     position: relative;
 }
 
+body {
+    position: relative;
+}
+
 header {
     width: 100%;
     background-color: #28293d;
@@ -527,6 +531,78 @@ header {
    width: 100%;
 }
 
+.category-row {
+    margin-bottom: 1.5rem;
+}
+
+.category-item-title {
+    padding: 0;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid whitesmoke;
+}
+
+.category-item-title a {
+    color: #00cfdd;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    background: none;
+    line-height: normal;
+}
+
+.category-item {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+}
+
+.category-item-list {
+    width: 11.73%;
+    height: 10rem;
+    border-radius: 15px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.category-laptop {
+    background: #ff8080;
+}
+
+.category-pc-accessory {
+    background: #5b8dee;
+}
+
+.category-gaming-gear {
+    background: #c4b5fd;
+}
+
+.category-item-list a {
+    width: 100%;
+    height: 100%;
+    padding: 0.6rem;
+    text-decoration: none;
+    background: transparent;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.category-item-list a p {
+    text-align: left;
+    color: white;
+    font-weight: 600;
+    background: transparent;
+}
+
+.category-item-list a img {
+    background: none;
+    width: 90%;
+    margin-top: 0;
+}
+
 .product {
     padding-bottom: 3rem;
     display: flex;
@@ -544,12 +620,11 @@ header {
 .product-list-name {
     border-bottom: 2px solid whitesmoke;
     margin-bottom: 0.5rem;
-    padding-left: 1rem;
     display: flex;
     align-items: center;
 }
 
-.product-list-name > a {
+.product-list-name a {
     color: #00cfdd;
     text-decoration: none;
     font-size: 1.5rem;
@@ -947,16 +1022,17 @@ header {
     flex-wrap: wrap;
     margin-top: 1rem;
     margin-bottom: 2rem;
+    gap: 1rem;
 }
 
 .manufacturer-logo button {
     width: 9rem;
-    padding: 0 0.8rem;
+    height: 3rem;
+    padding: 0 1rem;
     border-radius: 1.8rem;
     background: white;
     box-sizing: border-box;
     border: none;
-    margin-right: 1rem;
     overflow: hidden;
 }
 
@@ -1105,19 +1181,55 @@ footer *{
     margin-bottom: 0.5rem;
 }
 
-.bottom-footer-column-3 button {
-    width: 6rem;
-    height: 2rem;
-    background-color: #ff3b3b;
-    border: none;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+.contact-bottom-right-icon {
+    position: fixed;
+    bottom: 2rem;
+    right: 1.5rem;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    z-index: 98;
 }
 
-.bottom-footer-column-3 button a {
-    text-decoration: none;
-    color: white;
+.contact-bottom-right-icon i {
+    font-size: 2rem;
+    background: none;
+}
+
+.contact-bottom-right-icon .fa-facebook {
+    color: #1d9bf0;
+}
+
+.contact-bottom-right-icon .fa-facebook-messenger {
+    background: linear-gradient(45deg, #1588ff, #6657ff, #c23cd4, #ff6d63);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.contact-bottom-right-icon .fa-youtube {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: #ff0000;
+}
+
+.mobile-go-to-top {
+    position: fixed;
+    background: none;
+    border: none;
+    right: 0.4rem;
+    bottom: 1rem;
+    display: none;
+}
+
+.mobile-go-to-top a {
+    background: none;
+}
+
+.mobile-go-to-top i {
+    color: #ff3b3b;
+    font-size: 1.8rem;
 }
 
 /*For mobile*/
@@ -1212,6 +1324,25 @@ footer *{
 
     .infomation {
         display: none;
+    }
+
+    .category-item {
+        display: grid;
+        grid-template-columns: 9rem 9rem 9rem 9rem 9rem;
+        grid-template-rows: auto auto;
+        overflow-x: scroll;
+    }
+
+    .category-item-list {
+        width: auto;
+    }
+
+    .category-item-title a {
+        font-size: 1.2rem;
+    }
+
+    .category-item-list a img {
+        width: 100%;
     }
 
     .product {
@@ -1312,20 +1443,20 @@ footer *{
     }
 
     .total-payment {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     
     .total-payment span {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .pay-btn {
-        width: 6rem;
-        height: 2em;
+        width: 8rem;
+        height: 2.5em;
     }
 
     .pay-btn a {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     /*Infomation ----------------------------------------------------------- */
@@ -1387,6 +1518,12 @@ footer *{
         gap: 0.7rem;
     }
 
+    .manufacturer-logo button {
+        width: 7rem;
+        height: 2.5rem;
+        padding: 0 0.5rem;
+    }
+
     .product-list-product-page {
         grid-template-columns: auto auto;
     }
@@ -1446,6 +1583,14 @@ footer *{
         position: static;
         float: right;
         margin-top: 1rem;
+    }
+
+    .contact-bottom-right-icon {
+        display: none;
+    }
+
+    .mobile-go-to-top {
+        display: block;
     }
 }
 
@@ -1522,6 +1667,10 @@ footer *{
 
     .infomation button {
         border: 2px solid #555870;
+    }
+
+    .category-item-list {
+        width: 15%;
     }
 
     .product-list-items {
@@ -1601,5 +1750,19 @@ footer *{
 
     .subcribe {
         width: 50%;
+    }
+
+    .contact-bottom-right-icon {
+        display: none;
+    }
+
+    .mobile-go-to-top {
+        display: block;
+        right: 1rem;
+        bottom: 1.4rem;
+    }
+
+    .mobile-go-to-top i {
+        font-size: 2.1rem;
     }
 }
