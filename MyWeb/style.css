@@ -538,7 +538,7 @@ header {
 .category-item-title {
     padding: 0;
     margin-bottom: 0.5rem;
-    border-bottom: 2px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
 }
 
 .category-item-title a {
@@ -563,6 +563,10 @@ header {
     border-radius: 15px;
     overflow: hidden;
     box-sizing: border-box;
+}
+
+.category-item-list a img:hover {
+    transform: scale(1.5);
 }
 
 .category-laptop {
@@ -600,7 +604,7 @@ header {
 .category-item-list a img {
     background: none;
     width: 90%;
-    margin-top: 0;
+    transition: .5s;
 }
 
 .product {
@@ -1324,6 +1328,10 @@ footer *{
 
     .infomation {
         display: none;
+    }
+
+    .category {
+        margin-top: 2rem;
     }
 
     .category-item {
