@@ -417,6 +417,7 @@ header {
     background: linear-gradient(to right, #ff0000, #ffff00, #ff00f3, #0033ff, #ff00c4, #ff0000);
     background-size: 400%;
     -webkit-text-fill-color: transparent;
+    background-clip: text;
     -webkit-background-clip: text;
     animation: wave 10s linear infinite;
 }
