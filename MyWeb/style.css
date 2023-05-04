@@ -1534,6 +1534,7 @@ footer *{
 
     .product-list-product-page {
         grid-template-columns: auto auto;
+        gap: 0;
     }
 
     /*Footer ----------------------------------------------------------- */
