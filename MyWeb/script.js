@@ -1,3 +1,43 @@
+//--------------------------------------------------------------------
+
+//Show sidebar menu
+const showSidebarBtn = document.getElementById('show-sidebar')
+const closeSidebarBtn = document.getElementById('close-sidebar')
+const sidebar = document.querySelector('.mobile-sidebar-menu');
+const overlay = document.querySelector('.overlay');
+
+showSidebarBtn.addEventListener('click', () => {
+    sidebar.style.left = 0;
+    overlay.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+});
+
+overlay.addEventListener('click', () => {
+    sidebar.style.left = '-100%';
+    overlay.style.display = 'none';
+    document.body.style.overflow = 'auto';
+});
+
+closeSidebarBtn.addEventListener('click', () => {
+    sidebar.style.left = '-100%';
+    overlay.style.display = 'none';
+    document.body.style.overflow = 'auto';
+});
+
+//Show sidebar list item
+const showSidebarListItem = document.querySelectorAll('.mobile-sidebar-menu > ul > li');
+
+showSidebarListItem.forEach(function(showSbListItem) {
+    const sidebarListItemBtn = showSbListItem.querySelector('#show-sidebar-list-item');
+    const sidebarListItem = showSbListItem.querySelector('.sidebar-menu-item');
+
+    sidebarListItemBtn.addEventListener('click', () => {
+        sidebarListItem.classList.toggle('open');
+        sidebarListItemBtn.classList.toggle('rotateBtn');
+    });
+});
+
+
 //Tự động play video
 const video = document.querySelector('.video video');
 const mute_btn = document.querySelector('#mute-btn');
