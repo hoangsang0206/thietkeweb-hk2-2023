@@ -528,6 +528,11 @@ header {
     box-shadow: 5px 5px 10px #0063f8;
 }
 
+.video {
+    /* overflow: hidden; */
+    display: flex;
+}
+
 .video > video{
    width: 100%;
 }
