@@ -1,5 +1,8 @@
 //Tự động play video
 const video = document.querySelector('.video video');
+const mute_btn = document.querySelector('#mute-btn');
+const next_video = document.querySelector('.video i');
+
 const videos = [
     {
         vid_src: "../MyWeb/videos/AORUS 15G-15P (RTX 30).mp4"
@@ -28,14 +31,12 @@ function playNextVideo() {
 }
 
 video.addEventListener('ended', playNextVideo);
-
-// const item = videos[0].vid_src;
-// video.src = item;
-// console.log(video.duration);
-
-// for (let i of videos) {
-//     const vid__src = videos[i].vid_src;
-//     video.src = vid__src;
-//     video.play();
-//     setTimeout(video.length);
-// }
+mute_btn.addEventListener('change', function() {
+    if(this.checked == true) {
+        video.muted = false;
+    }
+    else {
+        video.muted = true;
+    }
+});
+next_video.addEventListener('click', playNextVideo);

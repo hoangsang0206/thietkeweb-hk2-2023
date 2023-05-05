@@ -529,12 +529,25 @@ header {
 }
 
 .video {
-    /* overflow: hidden; */
     display: flex;
+    position: relative;
 }
 
 .video > video{
    width: 100%;
+}
+
+.video i {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    font-size: 1.2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.video:hover i {
+    display: block;
 }
 
 .category-row {
@@ -782,7 +795,7 @@ header {
     color: white;
 }
 
-.cart form input{
+.cart input{
     width: 3rem;
     background: none;
     text-align: center;
@@ -828,6 +841,24 @@ header {
     cursor: pointer;
 }
 
+.cart .nothing-here {
+    height: 40vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart .nothing-here h1 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+.cart .nothing-here a, .cart .nothing-here a i {
+    color: #0063f8;
+    font-size: 1.2rem;
+}
+
 .pay {
     margin-top: 2rem;
     display: grid;
@@ -843,11 +874,11 @@ header {
     border-radius: 6px;
 }
 
-.total-payment {
+.total-payment-money {
     font-size: 1.2rem;
 }
 
-.total-payment span {
+.total-payment span:nth-child(1) {
     font-size: 1.2rem;
     font-weight: 600;
     color: #ff3b3b;
@@ -1406,6 +1437,34 @@ footer *{
     color: #ff0000;
 }
 
+#mute-btn {
+    display: none;
+}
+
+.mute-btn-label {
+    background: none;
+}
+
+#mute-btn:checked ~ .mute-btn-label i::after{
+    transform: scaleX(0);
+}
+
+.contact-bottom-right-icon .fa-music {
+    position: relative;
+}
+
+.contact-bottom-right-icon .fa-music::after {
+    content: "";
+    background: white;
+    width: 2.6rem;
+    height: 5px;
+    border-radius: 7px;
+    position: absolute;
+    left: -3px;
+    top: 50%;
+    transform: rotate(45deg);
+}
+
 .mobile-go-to-top {
     position: fixed;
     background: none;
@@ -1638,11 +1697,11 @@ footer *{
         display: none;
     }
 
-    .total-payment {
+    .total-payment-money {
         font-size: 1.2rem;
     }
     
-    .total-payment span {
+    .total-payment span:nth-child(1) {
         font-size: 1.1rem;
     }
 
