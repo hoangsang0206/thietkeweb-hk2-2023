@@ -1966,6 +1966,14 @@ footer *{
         box-sizing: border-box;
     }
 
+    .logo {
+        display: none;
+    }
+
+    .mobile-logo-and-show-sidebar {
+        display: flex;
+    }
+
     .navigation {
         display: none;
     }
@@ -1973,8 +1981,6 @@ footer *{
     .search-box {
         width: 45%;
     }
-
-    
 
     .content {
         flex-direction: column;
