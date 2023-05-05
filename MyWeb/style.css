@@ -984,6 +984,10 @@ header {
     color: white;
 }
 
+.where-am-i a:hover {
+    color: #ac5cd9;    
+}
+
 .where-am-i i {
     font-size: 0.8rem;
     margin: 0 0.3rem;
@@ -1050,6 +1054,171 @@ header {
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 0.5rem;
+}
+
+/*1 Product Page ------------------------------------------------------------------------- */
+.one-product {
+    padding: 2.5rem 0;
+}
+
+.top-1-product-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.image-slider {
+    width: 50%;
+    padding: 0.8rem;
+    border: 1px solid white;
+}
+
+.product-parameter {
+    width: 50%;
+    padding: 0 0 0 1rem;
+}
+
+.product-parameter h1 {
+    font-size: 1.6rem;
+}
+
+.about-product {
+    margin-top: 1.5rem;
+}
+
+.about-product strong {
+    font-weight: 600;
+}
+
+.about-product span {
+    font-weight: 600;
+    color: #3d7bfa;
+}
+
+.product-parameter-xxx {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.product-parameter-xxx i {
+    margin-right: 0.6rem;
+}
+
+.product-parameter-promotion {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-parameter-promotion strong {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-decoration: underline;
+    color: #ff3b3b;
+}
+
+.product-parameter-promotion span {
+    font-size: 1.1rem;
+    margin-top: 0.8rem;
+}
+
+.product-parameter-another-promotion {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-parameter-another-promotion strong {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ff3b3b;
+}
+
+.product-parameter-another-promotion span {
+    margin-top: 0.3rem;
+}
+
+.buy-product {
+    display: flex;
+    flex-direction: column;
+}
+
+.buy-product strong {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ff3b3b;
+}
+
+.buy-product-or-add-to-cart {
+    margin-top: 1rem;
+}
+
+.buy-product-or-add-to-cart > p {
+    margin-bottom: 1rem;
+}
+
+.buy-product-or-add-to-cart > p strong {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.buy-product-or-add-to-cart button {
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.2rem;
+    border: none;
+    background: #ff3b3b;
+}
+
+.buy-product-or-add-to-cart button:not(:nth-child(2)) {
+    margin-left: 1rem;
+}
+
+.buy-product-or-add-to-cart button span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: none;
+}
+
+.buy-product-or-add-to-cart button i {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.one-product-decribe {
+    display: flex;
+    flex-direction: column;
+}
+
+.one-product-infomation {
+    margin-top: 2rem;
+}
+
+.one-product-infomation h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #00cfdd;
+}
+
+.one-product-infomation table {
+    width: 80%;
+}
+
+.one-product-infomation table tr, .one-product-infomation table td{
+    border: 1px solid #555870;
+}
+
+.one-product-infomation table td {
+    padding: 0.7rem;
+}
+
+.one-product-infomation table td:first-child {
+    font-weight: 600;
+    width: 15%;
+}
+
+.one-product-another-infomation {
+    margin-top: 1.5rem;
 }
 
 /*Footer -------------------------------------------------------------------------*/
@@ -1537,6 +1706,20 @@ footer *{
         grid-template-columns: auto auto;
         gap: 0;
     }
+
+    /*1 product page -------------------------------------------------------------- */
+   .top-1-product-info {
+    flex-direction: column;
+   }
+
+   .image-slider {
+    width: 100%;
+   }
+
+   .product-parameter {
+    width: 100%;
+    padding: 0;
+   }
 
     /*Footer ----------------------------------------------------------- */
     footer * {
