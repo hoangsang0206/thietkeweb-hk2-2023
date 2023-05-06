@@ -48,10 +48,25 @@ const videos = [
         vid_src: "../MyWeb/videos/AORUS 15G-15P (RTX 30).mp4"
     },
     {
+        vid_src: "../MyWeb/Videos/2022 ROG Flow Z13 - One Device. Infinite Play.mp4"
+    },
+    {
         vid_src: "../MyWeb/videos/AORUS 17X-15X (2023).mp4"
     },
     {
+        vid_src: "../MyWeb/videos/AERO 16 OLED (2023).mp4"
+    },
+    {
+        vid_src: "../MyWeb/videos/CES 2023 All New ROG Gaming Laptops.mp4"
+    },
+    {
         vid_src: "../MyWeb/videos/AORUS GeForce RTX 40 Series.mp4"
+    },
+    {
+        vid_src: "../MyWeb/videos/Z790 AORUS XTREME.mp4"
+    },
+    {
+        vid_src: "../MyWeb/videos/AORUS STEALTH 500 - Build The Changer.mp4"
     }
 ];
 
