@@ -72,18 +72,16 @@ const videos = [
 
 let index = 0;
 video.src = videos[index].vid_src;
-video.load();
 video.play();
 
 function playNextVideo() {
-    // video.currentTime = 0;
-    // video.pause();
+    video.currentTime = 0;
+    video.pause();
     index++;
     if(index >= videos.length) {
         index = 0;
     }
     video.src = videos[index].vid_src;
-    video.load();
     video.play();
 }
 
