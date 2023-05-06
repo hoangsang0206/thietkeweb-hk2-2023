@@ -354,7 +354,7 @@ header {
 
 .mobile-sidebar-menu .fa-chevron-right {
     position: absolute;
-    right: 0;
+    right: 0.4rem;
     margin-right: 0;
     cursor: pointer;
     transition: .4s ease;
@@ -558,18 +558,47 @@ header {
    z-index: 10;
 }
 
-.video i {
+.video-pause-next-pre {
+    width: 15%;
     position: absolute;
     bottom: 0.5rem;
     right: 0.5rem;
-    font-size: 1.2rem;
     display: none;
-    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
     z-index: 15;
 }
 
-.video:hover i {
-    display: block;
+.video:hover .video-pause-next-pre {
+    display: flex;
+}
+
+.video-pause-next-pre i {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+#pause-video {
+    display: none;
+}
+
+.video-pause-next-pre label {
+    width: 0.9rem;
+    height: 0.9rem;
+    background: none;
+    border-left: 4px solid white;
+    border-right: 4px solid white;
+    transition: .4s ease;
+}
+
+#pause-video:checked ~ label {
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: none;
+    border-left-width: 15px;
+    border-radius: 2px;
+    overflow: hidden;
 }
 
 /* Video loading ------------------------ */
@@ -796,8 +825,9 @@ header {
 }
 
 .product-list-item .product-list-item-specs {
+    width: 100%;
     height: 100%;
-    padding-top: 0.8rem;
+    padding: 0.8rem 0.8rem 0 0;
     position: absolute;
     bottom: -100%;
     transition: .7s;

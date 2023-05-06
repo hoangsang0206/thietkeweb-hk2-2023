@@ -41,7 +41,9 @@ showSidebarListItem.forEach(function(showSbListItem) {
 //Tự động play video
 const video = document.querySelector('.video video');
 const mute_btn = document.querySelector('#mute-btn');
-const next_video = document.querySelector('.video i');
+const next_video = document.querySelector('.video-pause-next-pre .fa-forward-step');
+const pre_video = document.querySelector('.video-pause-next-pre .fa-backward-step');
+const pause_video = document.getElementById('pause-video');
 
 const videos = [
     {
@@ -85,6 +87,17 @@ function playNextVideo() {
     video.play();
 }
 
+function playPreVideo() {
+    video.currentTime = 0;
+    video.pause();
+    index--;
+    if(index < 0) {
+        index = videos.length - 1;
+    }
+    video.src = videos[index].vid_src;
+    video.play();
+}
+
 video.addEventListener('ended', playNextVideo);
 
 mute_btn.addEventListener('change', function() {
@@ -96,4 +109,14 @@ mute_btn.addEventListener('change', function() {
     }
 });
 
+pause_video.addEventListener('change', function() {
+    if(this.checked == true) {
+        video.pause();
+    }
+    else {
+        video.play();
+    }
+});
+
 next_video.addEventListener('click', playNextVideo);
+pre_video.addEventListener('click', playPreVideo);
