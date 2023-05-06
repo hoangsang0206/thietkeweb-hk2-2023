@@ -85,6 +85,7 @@ function playNextVideo() {
     }
     video.src = videos[index].vid_src;
     video.play();
+    pause_video.checked = false;
 }
 
 function playPreVideo() {
@@ -96,6 +97,7 @@ function playPreVideo() {
     }
     video.src = videos[index].vid_src;
     video.play();
+    pause_video.checked = false;
 }
 
 video.addEventListener('ended', playNextVideo);
