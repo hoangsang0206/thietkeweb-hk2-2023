@@ -72,20 +72,23 @@ const videos = [
 
 let index = 0;
 video.src = videos[index].vid_src;
+video.load();
 video.play();
 
 function playNextVideo() {
-    video.currentTime = 0;
-    video.pause();
+    // video.currentTime = 0;
+    // video.pause();
     index++;
     if(index >= videos.length) {
         index = 0;
     }
     video.src = videos[index].vid_src;
+    video.load();
     video.play();
 }
 
 video.addEventListener('ended', playNextVideo);
+
 mute_btn.addEventListener('change', function() {
     if(this.checked == true) {
         video.muted = false;
@@ -94,4 +97,5 @@ mute_btn.addEventListener('change', function() {
         video.muted = true;
     }
 });
+
 next_video.addEventListener('click', playNextVideo);
