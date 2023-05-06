@@ -48,7 +48,7 @@ const videos = [
         vid_src: "../MyWeb/videos/AORUS 15G-15P (RTX 30).mp4"
     },
     {
-        vid_src: "../MyWeb/Videos/2022 ROG Flow Z13 - One Device Infinite Play.mp4"
+        vid_src: "../MyWeb/videos/2022 ROG Flow Z13 - One Device Infinite Play.mp4"
     },
     {
         vid_src: "../MyWeb/videos/AORUS 17X-15X (2023).mp4"
