@@ -37,6 +37,18 @@ showSidebarListItem.forEach(function(showSbListItem) {
     });
 });
 
+// Show mobile search box
+const showMobileSearch = document.getElementById('show-mobile-search-box');
+const closeMobileSearch = document.getElementById('close-mobile-search-box');
+const mobileSearch = document.querySelector('.mobile-search-box');
+
+showMobileSearch.addEventListener('click', () => {
+    mobileSearch.classList.toggle('mobileSearchOpen');
+});
+
+closeMobileSearch.addEventListener('click', () => {
+    mobileSearch.classList.toggle('mobileSearchOpen');
+});
 
 //Tự động play video
 const video = document.querySelector('.video video');
