@@ -93,6 +93,7 @@ header {
     width: 83%;
     padding: 0 1rem;
     border: 1px solid white;
+    border-right: none;
 }
 
 .search-box:hover button {
@@ -158,7 +159,7 @@ header {
     align-items: center;
     position: absolute;
     right: 0.5rem;
-    width: 65%;
+    width: 70%;
     height: 60%;
     border-radius: 1.5rem;
     z-index: 101;
@@ -179,8 +180,9 @@ header {
 
 #close-mobile-search-box {
     display: none;
+    width: 13%;
     font-size: 1.3rem;
-    margin-left: 1rem;
+    place-items: center;
     cursor: pointer;
     z-index: 101;
 }
@@ -1751,7 +1753,7 @@ footer *{
     }
 
     #close-mobile-search-box {
-        display: block;
+        display: grid;
     }
 
     /* ---------------------------------- */
