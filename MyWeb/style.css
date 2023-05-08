@@ -179,9 +179,9 @@ header {
 }
 
 #close-mobile-search-box {
-    display: none;
     width: 13%;
     font-size: 1.3rem;
+    display: grid;
     place-items: center;
     cursor: pointer;
     z-index: 101;
@@ -1727,33 +1727,8 @@ footer *{
         display: none;
     }
 
-    /* .search-box {
-        margin-left: 0;
-        width: 45%;
-        height: 2rem;
-    }
-
-    .search-box input {
-        padding: 0.7rem;
-        width: 100%;
-    }
-
-    .search-box input::placeholder {
-        font-size: 0.9rem;
-    }
-
-    .search-box button {
-        width: 3rem;
-    } */
-
-    /* Mobile search box ---------------------- */
-
     #show-mobile-search-box {
         display: block;
-    }
-
-    #close-mobile-search-box {
-        display: grid;
     }
 
     /* ---------------------------------- */
@@ -2187,7 +2162,12 @@ footer *{
     }
 
     .search-box {
-        width: 45%;
+        display: none;
+    }
+
+    #show-mobile-search-box {
+        display: block;
+        right: 8rem;
     }
 
     .content {
