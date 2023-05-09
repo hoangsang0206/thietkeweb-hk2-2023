@@ -668,7 +668,7 @@ header {
     border-left: 4px solid white;
     border-right: 4px solid white;
     transition: .4s ease;
-    cursor: pointer;
+    
 }
 
 #pause-video:checked ~ label {
@@ -1656,7 +1656,7 @@ footer *{
 
 .mute-btn-label {
     background: none;
-    cursor: pointer;
+    
 }
 
 #mute-btn:checked ~ .mute-btn-label i::after{
