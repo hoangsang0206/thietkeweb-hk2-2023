@@ -848,7 +848,6 @@ header {
 
 .product-list-items {
     display: grid;
-    grid-template-rows: auto auto;
     grid-template-columns: auto auto auto auto;
     gap: 0.5rem;
 }
@@ -1789,7 +1788,6 @@ footer *{
     .category-item {
         display: grid;
         grid-template-columns: 9rem 9rem 9rem 9rem 9rem;
-        grid-template-rows: auto auto;
         overflow-x: scroll;
     }
 
@@ -1819,7 +1817,6 @@ footer *{
 
     .product-list-items {
         display: grid;
-        grid-template-rows: auto auto auto;
         grid-template-columns: auto auto;
         gap: 0rem;
     }
@@ -2212,7 +2209,6 @@ footer *{
 
     .product-list-items {
         display: grid;
-        grid-template-rows: auto auto auto;
         grid-template-columns: auto auto auto;
         gap: 0.5rem;
     }
