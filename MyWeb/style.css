@@ -554,7 +554,7 @@ header {
     background-image: linear-gradient(to right, #6500cd, #00cfdd);
 }
 
-.slide {
+.content .slide {
     width: 60%;
 }
 
