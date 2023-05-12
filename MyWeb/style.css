@@ -836,14 +836,21 @@ header {
     margin-bottom: 0.5rem;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-.product-list-name a {
+.product-list-name a:first-child {
     color: #00cfdd;
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 500;
     background: none;
+}
+
+.product-list-name a:last-child {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #0063f8;
 }
 
 .product-list-items {
@@ -1804,8 +1811,12 @@ footer *{
         padding: 0;
     }
 
-    .product-list-name a {
+    .product-list-name a:first-child {
         font-size: 1.3rem;
+    }
+
+    .product-list-name a:last-child {
+        font-size: 0.8rem;
     }
 
     .product-list-items {
