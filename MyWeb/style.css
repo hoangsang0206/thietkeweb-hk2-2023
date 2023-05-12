@@ -1138,10 +1138,20 @@ header {
     font-size: 1.3rem;
 }
 
-.student-info .fa-facebook {
+.student-info-link {
+    padding-top: 0.7rem;
+}
+
+.student-info-link i {
     font-size: 2rem;
-    margin-top: 0.7rem;
+}
+
+.student-info-link .fa-facebook {
     color: #0d8df0;
+}
+
+.student-info-link .fa-github {
+    margin-left: 1rem;
 }
 
 .project-infomation {
@@ -1947,10 +1957,6 @@ footer *{
     .project-infomation {
         flex-direction: column;
         padding: 1rem 0 3rem 0;
-    }
-
-    .project-img {
-        display: none;
     }
 
     .project-info {
