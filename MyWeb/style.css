@@ -1098,7 +1098,7 @@ header {
 }
 
 .student-img {
-    width: 35%;
+    width: 45%;
     display: flex;
     align-items: center;
 }
@@ -1108,9 +1108,10 @@ header {
 }
 
 .student-info {
-    width: 65%;
-    padding: 1rem;
+    width: 55%;
+    padding: 1.5rem;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .student-info > h1 {
@@ -1144,16 +1145,8 @@ header {
     justify-content: space-between;
 }
 
-.project-img {
-    width: 35%;
-}
-
-.project-img > img {
-    width: 100%;
-}
-
 .project-info {
-    width: 65%;
+    width: 100%;
     padding-right: 0.5rem;
 }
 
