@@ -1470,7 +1470,7 @@ header {
     width: 15%;
 }
 
-.one-product-another-infomation {
+/* .one-product-another-infomation {
     margin-top: 1rem;
 }
 
@@ -1489,7 +1489,679 @@ header {
 .one-product-another-infomation img {
     width: 45%;
     margin: 3rem 0 3rem 0;
+} */
+
+
+.one-product-page__row-2 {
+    background-image: url(One-Product-Page/AORUS-15P-images/aorus_15p_background.jpg);
+    background-repeat: no-repeat;
+    margin-top: 10rem;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 0; */
 }
+
+.one-product-page__row-2 > .container-xxl  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 0;
+}
+
+.one-product-page__row-2 * {
+    background: none;
+    font-family: 'Aldrich', sans-serif;
+}
+
+.aorus-15p-img {
+    width: 70%;
+}
+
+.intel-nvidia-img {
+    width: 50%;
+    text-align: center;
+    line-height: 7rem;
+    margin-top: 4rem;
+}
+
+.intel-nvidia-img img:first-child {
+    height: 82%;
+}
+
+.intel-nvidia-img img:last-child {
+    margin-left: 2.5rem;
+    height: 60%;
+}
+
+.one-product-page__row-2__span-1 {
+    text-align: center;
+    line-height: 2.8rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 3rem;
+}
+
+.one-product-page__row-2__span-2 {
+    color: #ff6c00;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.one-product-page__row-2__span-3  {
+    font-family: 'Poppins', sans-serif;
+    color: #aeafb0;
+    font-weight: 300;
+    width: 51%;
+    margin-top: 1.5rem;
+}
+
+.one-product-page__row-2__div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.one-product-page__row-2__div__item {
+    color: #ff6c00;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 1rem 1.5rem;
+    border: 1px solid #ff6c00;
+    border-left: 8px solid #ff6c00;
+    background: #0e0f10;
+}
+
+.one-product-page__row-3 {
+    background-image: url(One-Product-Page/AORUS-15P-images/g2-bg.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 55%;
+    background-position-y: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 63rem;
+}
+
+.one-product-page__row-3 * {
+    background: none;
+    font-family: 'Aldrich', sans-serif;
+}
+
+.content-box {
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.content-box h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.content-box h2 {
+    color: #ff6c00;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.content-box p {
+    font-family: 'Poppins', sans-serif;
+    color: #aeafb0;
+    font-weight: 300;
+}
+
+.one-product-page__row-4 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.one-product-page__row-4 img {
+    width: 114%;
+}
+
+.rtx30s_img1 {
+    position: absolute;
+}
+
+.hiddenImg {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.one-product-page__row-5 {
+    background: #000000;
+    padding-top: 3rem;
+}
+
+.one-product-page__row-5 * {
+    background: transparent;
+}
+
+.row__1_col_1 {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.row__1_col_2 {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 2rem;
+    color: #ff6c00;
+    font-weight: 700;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.row__1_col_3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #aeafb0;
+    font-weight: 300;
+    text-align: center;
+}
+
+.row__1_col_3 p {
+    margin: 0;
+    padding: 0 10rem;
+}
+
+.row__1_col_4 {
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+.row__1_col_4 img {
+    width: 200px;
+}
+
+.row__2 {
+    padding-top: 3rem;
+}
+
+.row__2 div, .row__4 div {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.row__2 h1, .row__4 h1 {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 2rem;
+    color: #ff6c00;
+    font-weight: 700;
+    transition-delay: 250ms;
+}
+
+.row__2 p, .row__4 p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #aeafb0;
+    font-weight: 300;
+    padding-right: 1.5rem;
+    transition-delay: 280ms;
+}
+
+.row__2 img {
+    width: 100%;
+}
+
+.row__3 {
+    padding-top: 3rem;
+}
+
+.row__3 h1 {
+    text-align: center;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 2rem;
+    color: #ff6c00;
+    font-weight: 700;
+}
+
+.row__3 p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #aeafb0;
+    font-weight: 300;
+}
+
+.row__4 {
+    padding-top: 3rem;
+}
+
+.row__4 video {
+    width: 100%;
+}
+
+.one-product-page__row-6 {
+    background: #000000;
+    padding-top: 4rem;
+    position: relative;
+}
+
+.one-product-page__row-6 * {
+    background: transparent;
+}
+
+.one-product-page__row-6 video {
+    width: 100%;
+}
+
+.one-product-page__row-6_item {
+    width: 100%;
+    position: absolute;
+    bottom: 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.one-product-page__row-6_item h1 {
+    text-align: center;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+  
+
+.one-product-page__row-6_item h2 {
+    text-align: center;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ff6c00;
+}
+
+.one-product-page__row-6_item p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #aeafb0;
+    font-weight: 300;
+}
+
+.one-product-page__row-7 {
+    background: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.one-product-page__row-7 * {
+    background: transparent;
+}
+
+.azure-ai-video {
+    width: 70%;
+}
+
+.one-product-page__row-7 span {
+    width: 60%;
+    margin-top: 3rem;
+}
+
+.one-product-page__row-7 span h1 {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.one-product-page__row-7 span h2 {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ff6c00;
+    margin-top: 1rem;
+}
+
+.one-product-page__row-7 span p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #aeafb0;
+    font-weight: 300;
+    margin-top: 2rem;
+}
+
+.one-product-page__row-8 {
+    background: #000000;
+    padding: 4rem 0;
+}
+
+.one-product-page__row-8 * {
+    background: transparent;
+}
+
+.aorus-laptop_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+}
+
+.one-product-page__row-8 > img {
+    width: 100%;
+}
+
+.aorus-laptop_1_img_1 {
+    width: 60%;
+    position: absolute;
+    top: -64%; 
+}
+
+.ssd-gen-4 {
+    width: 55%;
+    margin-top: 10rem;
+}
+
+.ssd-gen-4 h1 {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.ssd-gen-4 h2 {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ff6c00;
+    margin-top: 1rem;
+}
+
+.ssd-gen-4 p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #aeafb0;
+    font-weight: 300;
+    margin-top: 2rem;
+}
+
+.ssd-gen-4 h3 {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #777777;
+    margin-top: 3rem;
+}
+
+.ssd-gen-4 img {
+    width: 100%;
+}
+
+.one-product-page__row-9 {
+    background-image: url(One-Product-Page/AORUS-15P-images/panel-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center;
+    padding: 10rem 0 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.one-product-page__row-9 * {
+    background: transparent;
+}
+
+.aorus-laptop {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.aorus-laptop img {
+    width: 50%;
+}
+
+.aorus-laptop div {
+    position: absolute;
+    width: 38.3%;
+    height: 56.2%;
+    top: 1.5%;
+    left: 31.5%;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.aorus-laptop video {
+    width: 100%;
+}
+
+.refresh-rate-60-360hz {
+    width: 70%;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.refresh-rate-60-360hz video {
+    width: 100%;
+}
+
+.refresh-rate-60-360hz span {
+    width: 9rem;
+    height: 5rem;
+    display: grid;
+    place-items: center;
+    font-size: 1.3rem;
+}
+
+.refresh-rate-60hz {
+    background: #4a4a4a;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.refresh-rate-360hz {
+    background: #ff6c00;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.one-product-page__row-10 {
+    background-image: url(One-Product-Page/AORUS-15P-images/fusion-bg.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 100%;
+    padding: 18rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.one-product-page__row-10 * {
+    background: transparent;
+}
+
+.one-product-page__row-10 > div {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.one-product-page__row-10 h1 {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.one-product-page__row-10 h2 {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ff6c00;
+    margin-top: 1rem;
+}
+
+.one-product-page__row-10 p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #aeafb0;
+    font-weight: 300;
+    margin-top: 2rem;
+}
+
+.keyboard-info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.keyboard-info_item {
+    color: #ff6c00;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 1.5rem 0 1.5rem 1rem;
+    border: 1px solid #ff6c00;
+    border-left: 8px solid #ff6c00;
+    background: #0e0f10;
+}
+
+.one-product-page__row-11 {
+    background-image: url(One-Product-Page/AORUS-15P-images/io-bg-left.jpg), 
+    url(One-Product-Page/AORUS-15P-images/io-bg-right.jpg);
+    background-repeat: no-repeat;
+    background-position: left, right;
+    background-size: 50%, 50%;
+    padding: 7rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.one-product-page__row-11 * {
+    background: transparent;
+}
+
+.aorus-15p-io-1 {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.aorus-15p-io-1 h1 {
+    text-align: center;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.aorus-15p-io-1 h2 {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ff6c00;
+}
+
+.aorus-15p-io-1 p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #aeafb0;
+    font-weight: 300;
+}
+
+.io-info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.io-info_item {
+    color: #ff6c00;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 1.5rem 1rem;
+    border: 1px solid #ff6c00;
+    border-left: 8px solid #ff6c00;
+    background: #0e0f10;
+}
+
+.aorus-15p-io-2 {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.aorus-15p-io-2 > div {
+    display: flex;
+    flex-direction: row;
+}
+
+.aorus-15p-io-2__1 > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90.5%;
+}
+
+.aorus-15p-io-2__1 > div p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: right;
+}
+
+.aorus-15p-io-2__2 > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    height: 87%;
+}
+
+.aorus-15p-io-2__2 > div p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+
+.aorus-15p-io-2__2 img {
+    transition-delay: 400ms;
+}
+
+
+.hidden {
+    opacity: 0;
+    transform: translateY(50%);
+}
+
+.show {
+    opacity: 1;
+    transform: translate(0);
+    transition: all .7s;
+}
+
 
 /*Footer -------------------------------------------------------------------------*/
 footer {
