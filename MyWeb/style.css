@@ -2450,7 +2450,7 @@ footer *{
         font-size: 1rem;
     }
    
-    .slide {
+    .content .slide {
         width: 100%;
         margin-top: 2rem;
     }
