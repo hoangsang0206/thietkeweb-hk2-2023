@@ -1491,6 +1491,27 @@ header {
     margin: 3rem 0 3rem 0;
 } */
 
+.scroll-to-view {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.scroll-to-view div {
+    border-bottom: 1px solid #626265;
+    width: 47%;
+}
+
+.scroll-to-view button {
+    border: none;
+    background: transparent;
+}
+
+.scroll-to-view i {
+    font-size: 2rem;
+}
 
 .one-product-page__row-2 {
     background-image: url(One-Product-Page/AORUS-15P-images/aorus_15p_background.jpg);
@@ -1668,12 +1689,12 @@ header {
 .row__1_col_3 {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
-    color: #aeafb0;
     font-weight: 300;
     text-align: center;
 }
 
 .row__1_col_3 p {
+    color: #aeafb0;
     margin: 0;
     padding: 0 10rem;
 }
@@ -1778,8 +1799,6 @@ header {
     font-weight: 700;
 }
 
-  
-
 .one-product-page__row-6_item h2 {
     text-align: center;
     font-family: 'Aldrich', sans-serif;
@@ -1798,6 +1817,9 @@ header {
 
 .one-product-page__row-7 {
     background: #000000;
+}
+
+.one-product-page__row-7 .container-xxl {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1808,21 +1830,28 @@ header {
 }
 
 .azure-ai-video {
-    width: 70%;
+    width: 100%;
+    display: grid;
+    place-items: center;
 }
 
-.one-product-page__row-7 span {
-    width: 60%;
+.azure-ai-video iframe {
+    width: 100%;
+    height: 650px;
+}
+
+.azure-ai-info  {
+    width: 75%;
     margin-top: 3rem;
 }
 
-.one-product-page__row-7 span h1 {
+.azure-ai-info h1 {
     font-family: 'Aldrich', sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
 }
 
-.one-product-page__row-7 span h2 {
+.azure-ai-info h2 {
     font-family: 'Aldrich', sans-serif;
     font-size: 2rem;
     font-weight: 700;
@@ -1830,7 +1859,7 @@ header {
     margin-top: 1rem;
 }
 
-.one-product-page__row-7 span p {
+.azure-ai-info p {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     color: #aeafb0;
@@ -1849,10 +1878,11 @@ header {
 
 .aorus-laptop_1 {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
+    justify-content: center;
     position: relative;
+    background-image: url(One-Product-Page/AORUS-15P-images/storage-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .one-product-page__row-8 > img {
@@ -1861,12 +1891,16 @@ header {
 
 .aorus-laptop_1_img_1 {
     width: 60%;
-    position: absolute;
-    top: -64%; 
+    transform: translateY(14%);
+}
+
+.one-product-page__row-8 > .container-xxl {
+    display: flex;
+    justify-content: center;
 }
 
 .ssd-gen-4 {
-    width: 55%;
+    width: 70%;
     margin-top: 10rem;
 }
 
@@ -1955,8 +1989,8 @@ header {
 }
 
 .refresh-rate-60-360hz span {
-    width: 9rem;
-    height: 5rem;
+    width: 15%;
+    height: 15%;
     display: grid;
     place-items: center;
     font-size: 1.3rem;
@@ -2739,12 +2773,179 @@ footer *{
         padding: 0.4rem
     }
 
-    .one-product-another-infomation h1 {
+    /* .one-product-another-infomation h1 {
         font-size: 1.1rem;
     }
 
     .one-product-another-infomation img {
         width: 90%;
+    } */
+
+    .one-product-page__row-2 {
+        background-size: 700%;
+    }
+
+    .aorus-15p-img {
+        width: 85%;
+    }
+
+    .intel-nvidia-img {
+        width: 100%;
+    }
+
+    .intel-nvidia-img img:first-child {
+        width: 20%;
+    }
+
+    .intel-nvidia-img img:last-child {
+        width: 40%;
+    }
+
+    .one-product-page__row-2__span-1 {
+        font-size: 1.8rem;
+    }
+
+    .one-product-page__row-2__span-2 {
+        font-size: 1.4rem;
+    }
+
+    .one-product-page__row-2__span-3 {
+        width: 100%;
+        padding: 0 1.8rem;
+    }
+
+    .one-product-page__row-2__div {
+        width: 100%;
+        padding: 0 1.8rem;
+    }
+
+    .one-product-page__row-2__div div {
+        font-size: 1.2rem;
+        padding: 0.7rem;
+    }
+
+    .one-product-page__row-3 {
+        background-image: url(One-Product-Page/AORUS-15P-images/g2-bg_mobile.jpg);
+    }
+
+    .content-box {
+        width: 90%;
+    }
+
+    .content-box h1 {
+        font-size: 2rem;
+    }
+
+    .content-box h2 {
+        font-size: 1.7rem;
+    }
+
+    .content-box p {
+        color: white;
+    }
+
+    .row__1_col_1 {
+        font-size: 1.8rem;
+    }
+
+    .row__1_col_2 {
+        font-size: 1.4rem;
+    }
+
+    .row__1_col_3 p {
+        padding: 0 1rem;
+    }
+
+    .row__1_col_4 img {
+        width: 30%;
+    }
+
+    .one-product-page__row-6 video {
+        width: 370%;
+        position: relative;
+        left: -40%;
+    }
+
+    .one-product-page__row-6_item h1 {
+        font-size: 1.8rem;
+    }
+
+    .one-product-page__row-6_item h2{
+        font-size: 1.4rem;
+    }
+
+    .azure-ai-video {
+        width: 100%;
+        display: grid;
+        place-items: center;
+    }
+    
+    .azure-ai-video iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    .azure-ai-info {
+        width: 100%;
+    }
+
+    .azure-ai-info h1 {
+        font-size: 1.8rem;
+    }
+
+    .azure-ai-info h2 {
+        font-size: 1.4rem;
+    }
+
+    .aorus-laptop_1 {
+        background-size: 200%;
+        padding: 4rem 0;
+    }
+
+    .aorus-laptop_1_img_1 {
+        width: 95%;
+    }
+
+    .ssd-gen-4 {
+        margin-top: 5rem;
+        width: 100%;
+    }
+
+    .ssd-gen-4 h1 {
+        font-size: 1.8rem;
+    }
+
+    .ssd-gen-4 h2 {
+        font-size: 1.4rem;
+    }
+
+    .ssd-gen-4 h3 {
+        font-size: 1.7rem;
+    }
+
+    .one-product-page__row-9 {
+        background-size: 250%;
+        padding: 6rem 2rem;
+        background-size: 280%;
+    }
+
+    .aorus-laptop img {
+        width: 100%;
+    }
+
+    .aorus-laptop div {
+        width: 76.7%;
+        left: 12.9%;
+    }
+
+    .refresh-rate-60-360hz {
+        width: 100%;
+    }
+
+    .refresh-rate-60-360hz span {
+        width: 20%;
+        height: 22%;
+        font-size: 1rem  ;
     }
 
     /*Footer ----------------------------------------------------------- */
