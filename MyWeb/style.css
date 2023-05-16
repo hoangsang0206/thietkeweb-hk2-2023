@@ -2860,6 +2860,10 @@ footer *{
         width: 30%;
     }
 
+    .one-product-page__row-6 {
+        overflow: hidden;
+    }
+
     .one-product-page__row-6 video {
         width: 370%;
         position: relative;
