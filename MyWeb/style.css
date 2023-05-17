@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
 
 * {
     padding: 0;
@@ -1958,7 +1959,7 @@ header {
 .one-product-page__row-9 {
     background-image: url(One-Product-Page/AORUS-15P-images/panel-bg.jpg);
     background-repeat: no-repeat;
-    background-size: 200%;
+    background-size: 270%;
     background-position: center;
     padding: 10rem 0 4rem 0;
     display: flex;
@@ -1993,6 +1994,56 @@ header {
 
 .aorus-laptop video {
     width: 100%;
+}
+
+.panel-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 5rem 0;
+}
+
+.panel-info h1 {
+    text-align: center;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.panel-info h2 {
+    text-align: center;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ff6c00;
+    margin-top: 1rem;
+}
+.panel-info p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #e6e7e7;
+    font-weight: 300;
+    margin-top: 2rem;
+}
+
+.panel-info-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.panel-info-btn div {
+    color: #ff6c00;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 1.5rem;
+    border: 1px solid #ff6c00;
+    border-left: 8px solid #ff6c00;
+    background: #0e0f10;
 }
 
 .refresh-rate-60-360hz {
@@ -2031,7 +2082,7 @@ header {
     background-image: url(One-Product-Page/AORUS-15P-images/fusion-bg.jpg);
     background-repeat: no-repeat;
     background-position-x: center;
-    background-size: 100%;
+    background-size: 130%;
     padding: 18rem 0;
     display: flex;
     justify-content: center;
@@ -2201,6 +2252,9 @@ header {
 .aorus-15p-io-2__2 img {
     transition-delay: 400ms;
 }
+
+
+
 
 
 .hidden {
@@ -2955,7 +3009,7 @@ footer *{
     .one-product-page__row-9 {
         background-size: 250%;
         padding: 6rem 2rem;
-        background-size: 300%;
+        background-size: 900%;
     }
 
     .aorus-laptop img {
@@ -2965,6 +3019,29 @@ footer *{
     .aorus-laptop div {
         width: 76.7%;
         left: 12.9%;
+    }
+
+    .panel-info {
+        width: 100%;
+        margin: 3rem 0;
+    }
+
+    .panel-info h1 {
+        font-size: 1.8rem;
+    }
+
+    .panel-info h2 {
+        font-size: 1.4rem;
+    }
+
+    .panel-info-btn {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .panel-info-btn div {
+        font-size: 1.5rem;
+        padding: 1rem;
     }
 
     .refresh-rate-60-360hz {
@@ -2999,7 +3076,7 @@ footer *{
     }
 
     .keyboard-info {
-        flex-direction: column;
+        flex-wrap: wrap;
         margin-top: 1rem;
     }
 
@@ -3029,7 +3106,8 @@ footer *{
     }
 
     .io-info {
-        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
         gap: 1rem;
     }
 
@@ -3460,7 +3538,7 @@ footer *{
     .one-product-page__row-9 {
         background-size: 250%;
         padding: 6rem 2rem;
-        background-size: 300%;
+        background-size: 500%;
     }
 
     .aorus-laptop img {
@@ -3470,6 +3548,27 @@ footer *{
     .aorus-laptop div {
         width: 76.7%;
         left: 12.9%;
+    }
+    
+    .panel-info {
+        width: 70%;
+    }
+
+    .panel-info h1 {
+        font-size: 1.8rem;
+    }
+
+    .panel-info h2 {
+        font-size: 1.4rem;
+    }
+
+    .panel-info-btn {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .panel-info-btn div {
+        font-size: 1.5rem;
     }
 
     .refresh-rate-60-360hz {
