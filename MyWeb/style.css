@@ -1615,7 +1615,7 @@ header {
     padding: 1rem 1.5rem;
     border: 1px solid #ff6c00;
     border-left: 8px solid #ff6c00;
-    background: #0e0f10;
+    background: #000000b0;
 }
 
 .one-product-page__row-3 {
@@ -2139,7 +2139,7 @@ header {
     padding: 1.5rem 0 1.5rem 1rem;
     border: 1px solid #ff6c00;
     border-left: 8px solid #ff6c00;
-    background: #0e0f10;
+    background: #000000b0;
 }
 
 .one-product-page__row-11 {
@@ -2204,7 +2204,7 @@ header {
     padding: 1.5rem 1rem;
     border: 1px solid #ff6c00;
     border-left: 8px solid #ff6c00;
-    background: #0e0f10;
+    background: #000000b0;
 }
 
 .aorus-15p-io-2 {
@@ -2253,9 +2253,194 @@ header {
     transition-delay: 400ms;
 }
 
+.one-product-page__row-12 {
+    background: #000000;
+    padding: 8rem 0;
+    border-bottom: 1px solid transparent;
+}
 
+.one-product-page__row-12 * {
+    background: transparent;
+}
 
+.one-product-page__row-12 h1 {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 2rem;
+    color: #ff6c00;
+}
 
+.one-product-page__row-12 h2 {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 1.7rem; 
+}
+
+.one-product-page__row-12 h3 {
+    font-size: 1.7rem;
+    color: #ff6c00;
+}
+
+.one-product-page__row-12 p {
+    font-size: 1rem;
+    color: #aeafb0;
+    font-weight: 300;
+    margin: 2rem 0;
+}
+
+.one-product-page__row-12 hr {
+    margin: 6rem 0;
+}
+
+.thunderbold-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 2rem;
+    margin-top: 1.7rem;
+}
+
+.thunderbold-icon-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.thunderbold-icon-img span {
+    color: #ff6c00;
+}
+
+.one-product-page__row-13 {
+    background-image: url(One-Product-Page/AORUS-15P-images/design-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position-y: 20%;
+    padding: 20rem 0;
+}
+
+.one-product-page__row-13 * { 
+    background: transparent;
+}
+
+.one-product-page__row-13 h1 {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.one-product-page__row-13 h2 {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 1.7rem; 
+    color: #ff6c00;
+    font-weight: 700;
+    margin-top: 1.5rem;
+}
+
+.one-product-page__row-13 p {
+    font-size: 1rem;
+    color: #cccccc;
+    font-weight: 300;
+    margin-top: 2rem;
+}
+
+.one-product-page__row-14 {
+    background-image: url(One-Product-Page/AORUS-15P-images/wifi-bg.jpg);
+    background-repeat: no-repeat;
+    padding: 20rem 0;
+}
+
+.one-product-page__row-14 * {
+    background: transparent;
+}
+
+.one-product-page__row-14 .container-xxl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 56%;
+}
+
+.one-product-page__row-14 h1 {
+    text-align: center;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.one-product-page__row-14 h2 {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 2rem; 
+    color: #ff6c00;
+    font-weight: 700;
+}
+
+.one-product-page__row-14 p {
+    text-align: center;
+    font-size: 1rem;
+    color: #cccccc;
+    font-weight: 300;
+}
+
+.wifi-6-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.wifi-6-icon-item {
+    color: #ff6c00;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 1.5rem 1rem;
+    border: 1px solid #ff6c00;
+    border-left: 8px solid #ff6c00;
+    background: #000000b0;
+}
+
+.one-product-page__row-15 {
+    background-image: url(One-Product-Page/AORUS-15P-images/dts-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 23rem 0;
+}
+
+.one-product-page__row-15 * {
+    background: transparent;
+}
+
+.one-product-page__row-15 .container-xxl {
+    width: 56%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.one-product-page__row-15 h1 {
+    text-align: center;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.one-product-page__row-15 h2 {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 2rem; 
+    color: #ff6c00;
+    font-weight: 700;
+}
+
+.one-product-page__row-15 p {
+    text-align: center;
+    font-size: 1rem;
+    color: #cccccc;
+    font-weight: 300;
+}
 
 .hidden {
     opacity: 0;
@@ -3055,7 +3240,7 @@ footer *{
     }
 
     .one-product-page__row-10 {
-        background-size: 400%;
+        background-size: 450%;
         padding: 2rem;
     }
 
@@ -3087,7 +3272,7 @@ footer *{
 
     .one-product-page__row-11 {
         background-image: url(One-Product-Page/AORUS-15P-images/io-bg-left.jpg);
-        background-size: 250%;
+        background-size: 280%;
         background-position: 50%;
         padding: 2rem;
     }
@@ -3152,6 +3337,75 @@ footer *{
 
     .aorus-15p-io-2__2 div p {
         font-size: 1rem;
+    }
+
+    .one-product-page__row-12 {
+        padding: 3rem 0;
+    }
+
+    .one-product-page__row-12 h1 {
+        font-size: 1.8rem;
+    }
+    
+    .one-product-page__row-12 h2 {
+        font-size: 1.5rem; 
+    }
+    
+    .one-product-page__row-12 h3 {
+        font-size: 1.5rem;
+    }
+
+    .one-product-page__row-12 hr {
+        margin: 3rem 0;
+    }
+
+    .one-product-page__row-13 {
+        background-size: 350%;
+        background-position-x: 55%;
+        padding: 3rem 0 8rem 0;
+    }
+
+    .one-product-page__row-13 h1 {
+        font-size: 1.7rem;
+    }
+
+    .one-product-page__row-13 h2 {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+    }
+
+    .one-product-page__row-13 p {
+        margin-top: 1.5rem;
+    }
+
+    .one-product-page__row-14 {
+        padding: 7rem 0 18rem 0;
+        background-position: center;
+    }
+
+    .one-product-page__row-14 .container-xxl {
+        width: 100%;
+    }
+
+    .one-product-page__row-14 h1 {
+        font-size: 1.7rem;
+    }
+
+    .one-product-page__row-14 h2 {
+        font-size: 1.4rem;
+    }
+
+    .wifi-6-icon-item {
+        font-size: 1.4rem;
+        padding: 1rem;
+    }
+
+    .one-product-page__row-15 {
+        padding: 16rem 0;
+    }
+
+    .one-product-page__row-15 .container-xxl {
+        width: 100%;
     }
 
     /*Footer ----------------------------------------------------------- */
@@ -3674,6 +3928,27 @@ footer *{
 
     .aorus-15p-io-2__2 div p {
         font-size: 1.2rem;
+    }
+
+    .one-product-page__row-13 {
+        background-size: 200%;
+        background-position-x: 40%;
+    }
+
+    .one-product-page__row-14 {
+        padding: 15rem 0;
+    }
+
+    .one-product-page__row-14 .container-xxl {
+        width: 90%;
+    }
+
+    .one-product-page__row-15 {
+        padding: 17rem 0;
+    }
+
+    .one-product-page__row-15 .container-xxl {
+        width: 90%;
     }
 
     /*Footer ----------------------------------------------------------- */
