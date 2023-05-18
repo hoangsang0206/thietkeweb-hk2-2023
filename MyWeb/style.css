@@ -3785,8 +3785,17 @@ footer *{
     }
 
     /*Product list page ----------------------------------------------------------- */
-    .filter-list {
-        gap: 0.5rem;
+    .filter-item {
+        position: static;
+    }
+
+    .filter-option {
+        left: 1rem;
+        width: 80vw;
+        height: 50vh;
+        padding-right: 1rem;
+        overflow-y: scroll;
+        border: 1px solid red;
     }
 
     .manufacturer-logo {
