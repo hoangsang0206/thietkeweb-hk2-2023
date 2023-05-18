@@ -10,6 +10,16 @@
     background: #1c1c27;;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #808080;
+    border-radius: 10px;
+}
+
 .container-xxl
 {
     /* width: 1300px; */
@@ -1235,33 +1245,177 @@ header {
     padding: 0.5rem 0;
     display: flex;
     flex-wrap: wrap;
+    gap: 0.5rem;
 }
 
-.filter-list button {
+.filter-item {
+    position: relative;
+}
+
+.filter-item-zIndex {
+    z-index: 101;
+}
+
+.filter-btn {
     padding: 0.2rem 0.6rem;
-    margin-right: 1rem;
     background: #0063f8;
     display: flex;
     border: none;
     border-radius: 3px;
+    position: relative;
 }
 
-.filter-list button i { 
-    height: 100%;
-}
-
-.filter-list button i:not(:first-child) {
+.filter-item:not(:first-child) .filter-btn i {
     margin-left: 0.3rem;
 }
 
-.filter-list button i:first-child {
-    margin-right: 0.3rem;
-    display: grid;
-    place-items: center;
+.filter-item:first-child .filter-btn {
+    display: flex;
+    align-items: center;
 }
 
-.filter-list button span {
+.filter-item:first-child .filter-btn i {
+    margin-right: 0.3rem;
+}
+
+.filter-btn span {
     background: none;
+}
+
+.filter-option {
+    width: 40vw;
+    padding: 3rem 2rem 2rem 1em;
+    position: absolute;
+    margin-top: 1rem;
+    border: 1px solid #575861;
+    display: none;
+    overflow-y: scroll;
+}
+
+.filter-item:first-child .filter-option {
+    height: 70vh;
+}
+
+.filter-option-arrow {
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 1rem;
+    top: -0.8rem;
+    background: none;
+    border-right: 0.8rem solid transparent;
+    border-left: 0.8rem solid transparent;
+    border-bottom: 0.8rem solid #575861;
+}
+
+.filter-option > div button {
+    padding: 0.3rem 0.6rem;
+    border: 1px solid #575861;
+    border-radius: 5px;
+}
+
+.filter-option > div button:hover {
+    border-color: #ff5c5c;
+    color: #ff5c5c;
+}
+
+.filter-item:is(:nth-child(8), :nth-child(9), :nth-child(10)) .filter-option
+ {
+    right: 0;
+}
+
+.filter-option h1 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.filter-option hr {
+    margin: 2rem 0;
+}
+
+.filter-option-1-row-1-item div {
+    margin-top: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.filter-option-1-row-2-item div {
+    margin-top: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.filter-option-1-row-3-item div {
+    margin-top: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.filter-option-1-row-4-item {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.filter-option-1-row-4-item div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.6rem;
+    padding-right: 1rem;
+}
+
+.filter-option-1-row-5-item {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.filter-option-1-row-5-item div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.6rem;
+    padding-right: 1rem;
+}
+
+.filter-option-1-row-6-item div {
+    margin-top: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.filter-option-item {
+    margin-top: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.show-filter-option {
+    display: block;
+}
+
+.close-filter-option-btn {
+    position: absolute;
+    top: 0.7rem;
+    right: 0.7rem;
+    padding: 0.2rem 0.5rem;
+    display: grid;
+    place-items: center;
+    border: 1px solid #575861;
+    border-radius: 0.2rem;
+}
+
+.close-filter-option-btn i {
+    font-size: 1.3rem;
 }
 
 .manufacturer-logo {
@@ -1309,6 +1463,21 @@ header {
 
 .btn-active {
     background: #ff8801;
+}
+
+.product-list-overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0909098d;
+    display: none;
+    z-index: 100;
+}
+
+.show-product-list-overlay {
+    display: block;
 }
 
 /*1 Product Page ------------------------------------------------------------------------- */
@@ -2429,6 +2598,7 @@ header {
 }
 
 .one-product-page__row-15 h2 {
+    text-align: center;
     font-family: 'Aldrich', sans-serif;
     font-size: 2rem; 
     color: #ff6c00;
@@ -2944,8 +3114,16 @@ footer *{
     }
 
     /*Product list page ----------------------------------------------------------- */
-    .filter-list {
-        gap: 0.5rem;
+    .filter-item {
+        position: static;
+    }
+
+    .filter-option {
+        left: 1rem;
+        width: 90vw;
+        height: 50vh;
+        padding-right: 1rem;
+        overflow-y: scroll;
     }
 
     .manufacturer-logo {
