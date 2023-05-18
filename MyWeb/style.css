@@ -3795,7 +3795,6 @@ footer *{
         height: 50vh;
         padding-right: 1rem;
         overflow-y: scroll;
-        border: 1px solid red;
     }
 
     .manufacturer-logo {
