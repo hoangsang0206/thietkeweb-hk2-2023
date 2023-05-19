@@ -3197,9 +3197,9 @@ footer *{
         font-size: 0.8rem;
     }
 
-    .one-product-infomation {
+    /* .one-product-infomation {
         overflow: scroll;
-    }
+    } */
 
     .one-product-infomation > h1 {
         font-size: 1.3rem;
