@@ -634,6 +634,7 @@ header {
 }
 
 .infomation button:hover {
+    border: none;
     background: linear-gradient(to right, #6600cc, #0063f7);
     box-shadow: 5px 5px 10px #0063f8;
 }
@@ -3722,9 +3723,9 @@ footer *{
         display: none;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
     }
 
-    .infomation button {
+/*     .infomation button {
         border: 2px solid #555870;
-    }
+    } */
 
     .category-item-list {
         width: 15%;
