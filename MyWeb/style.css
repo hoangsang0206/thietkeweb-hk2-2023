@@ -10,7 +10,7 @@
     background: #1c1c27;;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 5px;
     background-color: #000000;
 }
@@ -18,7 +18,7 @@
 ::-webkit-scrollbar-thumb {
     background-color: #808080;
     border-radius: 10px;
-}
+} */
 
 .container-xxl
 {
@@ -2846,10 +2846,6 @@ footer *{
 @media only screen and (max-width: 767px) {
     * {
         font-size: 1rem;
-    }
-
-    ::-webkit-scrollbar {
-        width: 1px;
     }
 
     .container-xxl {
